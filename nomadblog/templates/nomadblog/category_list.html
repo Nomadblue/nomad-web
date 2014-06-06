@@ -1,0 +1,13 @@
+<h1>{{ blog.title }} - Categories</h1>
+<ul>
+  {% for cat in object_list %}
+    {% comment %}
+      If the blog belongs to countries, it is not possible to resolve the url
+      from get_absolute_url (it could be /es/blog-slug/ or /it/blog-slug/).
+      Therefore, the href attr from the <a> must be filled by you.
+    {% endcomment %}
+    <li><p><a href="#">{{ cat.name }}</a></p></li>
+  {% empty %}
+    <li>Sorry, no categories found.</li>
+  {% endfor %}
+</ul>

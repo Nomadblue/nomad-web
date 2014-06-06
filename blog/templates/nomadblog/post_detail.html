@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block html_title %}{{ object.title }} | Nomadblue{% endblock %}
+{% block html_desc %}{{ object.summary|striptags|truncatechars:150 }}{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="company" />
+<meta property="og:title" content="{{ object.title }}" />
+<meta property="og:url" content="http://www.nomadblue.com{{ object.get_absolute_url }}" />
+<meta property="og:description" content="{{ object.summary|striptags|truncatechars:300 }}" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="title-lead">
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'post_list' %}">Nomadblue blog</a></li>
+      <li>{{ object.title }}</li>
+    </ul>
+    <h1>{{ object.title }}</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="post-summary">
+    {{ object.summary|safe }}
+  </div>
+  <div class="post-content">
+    {{ object.content|safe }}
+  </div>
+  <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/nomadblue/embed.js"></script><noscript><a href="http://nomadblue.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+{% endblock content %}

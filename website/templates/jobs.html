@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block html_title %}Jobs | Nomadblue{% endblock %}
+{% block html_desc %}Jobs and vacancies at Nomadblue. Work with us, we are hiring!{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="company">
+<meta property="og:title" content="Jobs and vacancies at Nomadblue - Web development for startups and smart companies">
+<meta property="og:url" content="http://www.nomadblue.com{% url 'jobs' %}">
+<meta property="og:description" content="We invest in talent to create disrupting businesses. We have the tools and the expertise for your deas.">
+{% endblock %}
+
+{% block content %}
+  
+<div class="container">
+  <div class="title-lead">
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li>Jobs</li>
+    </ul>
+    <h1>Work with us, we are hiring!</h1>
+  </div>
+</div>
+<div class="container">
+  <p class="clearfix">Currently these are the jobs we are offering:</p>
+  <ul>
+    <li><p><a href="{% url 'python_jobs' %}">Python/Django web developers</a></p></li>
+  </ul>
+</div>
+
+{% endblock content %}

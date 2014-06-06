@@ -1,0 +1,87 @@
+# Made by Nabuco @ Nomadblue (http://www.nomadblue.com/).
+#
+# INSTRUCTIONS:
+#
+# 1. Copy this file as '.env' into the project root folder.
+# 2. Edit the copied file (see observations below)
+#
+# Observations:
+#
+# 1. For the project to start, DEBUG, SECRET_KEY and DATABASE_URL
+#    (either for Sqlite or PostgreSQL) must be set.
+# 2. You must uncomment and set one of the two DATABASE_URL variables,
+#    either for SQLite or PostgreSQL
+# 3. The rest of commented vars can be left commented for a minimal working
+#    environment. However, you may need setting them in order to test the
+#    parts or features they configure or enable in the project.
+# 4. This is a sample conf file used across many Nomadblue projects, therefore
+#    some settings may not be used in this particular project. Consult your
+#    doctor before self medication!
+
+DEBUG=True
+
+# Insert secret key django-admin.py created in settings.py or generate a new 
+# one using django-extensions custom cmd: python manage.py generate_secret_key
+SECRET_KEY=''
+
+# Sqlite database (do not uncomment if you are going to use PostgreSQL)
+# Put the path to this project. If you change the default db name
+# 'dev.db' to something else, then 'reset_db.sh' will stop working.
+# DATABASE_URL='sqlite:////path/to/project/dev.db'
+
+# PostgreSQL database (do not uncomment if you are going to use Sqlite)
+# Replace user, password and dbname.
+# DATABASE_URL=postgres://user:password@localhost:5432/dbname
+
+# Enable or disable serving media files with django automatically. Useful when
+# you need to test other storage backends such as Amazon S3 (if set to False).
+# See localsettings.py to check out how it works.
+LOCAL_STORAGE=True
+
+# ################################ #
+# #### NON-MANDATORY SETTINGS #### #
+# ################################ #
+
+# Enable or disable django-debug-toolbar. See localsettings.py to kwno more.
+# ENABLE_DEBUG_TOOLBAR=True
+
+# Custom url to avoid easily discovering the admin.
+# See the root urls.py for more information.
+# ADMIN_URL='custom-admin-url/'
+
+# Amazon AWS for services such as S3.
+# Used by: django-storages, boto
+# AWS_STORAGE_BUCKET_NAME=''
+# AWS_ACCESS_KEY_ID=''
+# AWS_SECRET_ACCESS_KEY=''
+
+# SMTP Email delivery through Amazon SES.
+# Used by: django-smtp-ssl
+# EMAIL_HOST_USER=''
+# EMAIL_HOST_PASSWORD=''
+
+# Email notifications.
+# used by: django-nomad-notifier
+# SEND_EMAIL_NOTIFICATIONS=False
+# DEFAULT_FROM_EMAIL=''
+
+# Password protected sites, useful for test and staging deployments.
+# Used by: django-lockdown
+# LOCKDOWN_PASSWORD=''
+# USE_LOCKDOWN=True
+
+# LESS on client-side
+# If True, it will compile the linked files on your templates (e.g. base.html)
+# to generate the CSS client-side. NOT FOR PRODUCTION USE!!! When commiting your
+# less modifications, remember to pre-compile and include the new css before.
+# USE_LESS=True
+
+# Use holder.js to dinamically render local customizable placeholders
+# If True, it will load the Javascript that is needed by every img
+# loading media assets (usually user uploaded avatars or any media added
+# to models through the admin such as pictures in blog posts) in devel envs.
+# USE_HOLDER_JS=True
+
+# Load extra CSS to help styling templates, scaffolding them, etc
+# If True, it embeds snippets of extra CSS code into the templates.
+# USE_DEV_CSS=True

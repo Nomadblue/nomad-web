@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block html_title %}Contact us | Nomadblue{% endblock %}
+{% block html_desc %}You need python experts? You want to build the next iOS big hit? You dream of launching that idea? Let's talk!{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="company">
+<meta property="og:title" content="Nomadblue - Web development for startups and smart companies">
+<meta property="og:url" content="http://www.nomadblue.com{% url 'contact_form' %}">
+<meta property="og:description" content="We invest in talent to create disrupting businesses. We have the tools and the expertise for your deas.">
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <div class="title-lead">
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li>Contact us</li>
+    </ul>
+    <h1>Contact us</h1>
+  </div>
+</div>
+<div class="container">
+  <p class="post-summary">Do you have a question? Do you want to pitch us your idea? Maybe you just want to say hi or leave us a comment? Any case, we'd love to hear from you.</p>
+  <form action="{% url 'contact_form' %}" method="post" id="contact-form" class="form-horizontal" role="form">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Your name</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" name="name" id="name" placeholder="Your name here">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="col-sm-2 control-label">Phone (optional)</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="e.g. +56 9 58349448">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email address</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" name="email" id="email" placeholder="your@email.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="message" class="col-sm-2 control-label">Your message</label>
+      <div class="col-sm-8">
+        <textarea class="form-control" name="message" id="message" rows="8"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <input type="submit" class="btn btn-default" value="Send">
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Our offices in Santiago, Chile</h2>
+  <div class="post-summary">
+    <ul>
+      <li>Email: info (at) nomadblue.com</li>
+      <li>Phone: +56 9 58791449</li>
+      <li>Address: Almirante Zegers 764, Providencia, Santiago (Chile)</li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3329.5763226775334!2d-70.6235461!3d-33.4342885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c587111d8e8f%3A0xf598f59509600289!2sAlmirante+Zegers+764!5e0!3m2!1sen!2s!4v1402006747050" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    </div>
+  </div>
+</div>
+  
+{% endblock content %}

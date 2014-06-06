@@ -1,0 +1,12 @@
+{% comment %}
+  If the blog belongs to countries, it is not possible to resolve the url
+  from get_absolute_url (it could be /es/blog-slug/ or /it/blog-slug/)
+  Therefore, the href attr from the <a> must be filled by you.
+{% endcomment %}
+<h1><a href="#">{{ object.title }}</a></h1>
+<ul>
+  <li><p><em>Published on {{ object.pub_date|date }}</em></p></li>
+  <li><p>Author: <strong>{{ object.bloguser.user }}</strong></p></li>
+  <li><p>Status: {{ object.get_status_display }}</p></li>
+  <li><p>{{ object.content }}</p></li>
+<ul>

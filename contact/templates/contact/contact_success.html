@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block html_title %}Thank you | Nomadblue{% endblock %}
+{% block html_desc %}Thanks for contacting us!{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="company">
+<meta property="og:title" content="Nomadblue - Web development for startups and smart companies">
+<meta property="og:url" content="http://www.nomadblue.com{% url 'contact_success' %}">
+<meta property="og:description" content="We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas.">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="title-lead">
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'contact_form' %}">Contact us</a></li>
+      <li>Thank you</li>
+    </ul>
+    <h1>Thank you</h1>
+  </div>
+</div>
+
+<div class="container">
+  <p class="post-summary">Thanks for contacting us! We will write you back shortly.</p>
+</div>
+
+{% endblock content %}

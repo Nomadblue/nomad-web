@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block html_title %}Nomadblue Blog{% endblock %}
+{% block html_desc %}This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="company">
+<meta property="og:title" content="Nomadblue blog - Python, Django, web development">
+<meta property="og:url" content="http://www.nomadblue.com{% url 'post_list' %}">
+<meta property="og:description" content="This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="title-lead">
+    {% if category %}
+      <h1>Latest posts by category '{{ category }}'</h1>
+    {% else %}
+      <h1>Blog</h1>
+    {% endif %}
+  </div>
+</div>
+<div class="container">
+  {% for post in object_list %}
+    {% include "blog/bits/post_list_item.html" with object=post %}
+  {% endfor %}
+</div>
+
+{% endblock %}
