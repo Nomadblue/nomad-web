@@ -7,3 +7,4 @@ localsettings.py
 reset_dev_db.sh
 latest.pgdump
 fixtures/
+website/static/less/imports.less
