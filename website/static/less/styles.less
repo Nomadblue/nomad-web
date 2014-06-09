@@ -1,24 +1,88 @@
+// ----------------------------
+// Primary and secondary colors
+// ----------------------------
+
+@primary: hsl(189, 44.0329%, 52.3529%);
+
+// Primary Variants -
+@primaryLight:   hsl(hue(@primary), 100%, 70%);
+@primaryDark:    hsl(hue(@primary), 60%, 40%);
+@primaryFaded:   hsl(hue(@primary), 60%, 65%);
+
+// 180degree Variants
+@primaryVariant:         spin((@primary), 180);
+@primaryVariantLight:    hsl(hue(@primaryVariant), 100%, 70%);
+@primaryVariantDark:     hsl(hue(@primaryVariant), 60%, 40%);
+@primaryVariantFaded:    hsl(hue(@primaryVariant), 60%, 65%);
+
+// 90degree Variants
+@primaryCorner:         spin((@primary), 70);
+@primaryCornerLight:    hsl(hue(@primaryCorner), 100%, 70%);
+@primaryCornerDark:     hsl(hue(@primaryCorner), 60%, 40%);
+@primaryCornerFaded:    hsl(hue(@primaryCorner), 60%, 65%);
+
+@secondary: hsl(190, 62.6016%, 75.8824%);
+
+// Secondary Variants -
+@secondaryLight:   hsl(hue(@secondary), 100%, 70%);
+@secondaryDark:    hsl(hue(@secondary), 60%, 40%);
+@secondaryFaded:   hsl(hue(@secondary), 60%, 65%);
+
+// 180degree Variants
+@secondaryVariant:         spin((@secondary), 180);
+@secondaryVariantLight:    hsl(hue(@secondaryVariant), 100%, 70%);
+@secondaryVariantDark:     hsl(hue(@secondaryVariant), 60%, 40%);
+@secondaryVariantFaded:    hsl(hue(@secondaryVariant), 60%, 65%);
+ 
+// 90degree Variants
+@secondaryCorner:         spin((@secondary), 70);
+@secondaryCornerLight:    hsl(hue(@secondaryCorner), 100%, 70%);
+@secondaryCornerDark:     hsl(hue(@secondaryCorner), 60%, 40%);
+@secondaryCornerFaded:    hsl(hue(@secondaryCorner), 60%, 65%);
+
+@link-color: @primaryDark;
+
+@btn-primary-color: #000;
+@btn-primary-bg: @secondaryCornerLight;
+@btn-primary-border: @secondaryCornerLight;
+
+// --------------------------------
+// Twitter Bootstrap customizations
+// --------------------------------
+
+.btn-primary {
+    font-size: 1.2em;
+}
+
+// --------
+// NomadWeb
+// --------
+
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #2C3E50;
 }
 
 .navbar {
     background-color: #d0e3e8;
-    /* height: 70px; */
+    border: 0;
+}
+.navbar-nav li.active {
+  background-color: @secondary;
 }
 .navbar-brand,
-.navbar-nav li a,
+.navbar-nav li a.navbar-menu-item,
 .navbar-form {
+  color: @primaryDark;
   line-height: 70px;
   height: 70px;
   padding-top: 0;
   margin: 0;
+  font-size: 1.2em;
 }
 .navbar .logo-home {
     background: url(../img/nomadblue_full_logo.png) 0 0 no-repeat;
     width: 239px;
-    height: 33px;
+    height: 31px;
     margin-top: 19px;
     text-indent: -999em;
     display: inline-block;
@@ -32,6 +96,7 @@ body {
 }
 
 #home-lead { 
+    font-family: Dosis, Helvetica, Arial, sans-serif;
     height:100vh;
     background: url(../img/santiago_bg.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -50,6 +115,7 @@ body {
 #home-lead h1 {
     font-size: 65px;
     color: #9fdbea;
+    font-weight: 600;
 }
 #home-lead h3 {
     font-size: 30px;
@@ -85,7 +151,10 @@ body {
     padding-top: 90px;
     margin-bottom: 30px;
 }
-.home-triptic h2, .home-triptic p {
+.home-triptic h2 {
+    font-family: Dosis, Helvetica, Arial, sans-serif;
+}
+.home-triptic p {
     font-weight: 300;
 }
 .home-triptic a {
@@ -217,7 +286,8 @@ footer {
     margin-top: 30px;
 }
 footer .top {
-    background-color: #53a3b7;padding:15px 0;
+    background-color: #53a3b7;
+    padding: 15px 0;
 }
 footer .top h6 {
     font-size: 26px;
