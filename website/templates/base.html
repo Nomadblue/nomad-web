@@ -12,8 +12,8 @@
     <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic'>
     <!-- <link rel="stylesheet" type='text/css' href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
     {% if use_less %}
-      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
       <link rel="stylesheet/less" type="text/css" media="all" href="{% static 'less/imports.less' %}">
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
     {% else %}
       <link rel="stylesheet" type='text/css' href="{% static 'css/styles.css' %}">
     {% endif %}

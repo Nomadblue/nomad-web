@@ -44,10 +44,8 @@ edit them (the copied files, not the "_sample" ones!!!!)::
 
     cp conf/env_sample .env
     cp conf/localsettings_sample.py ahorramos/localsettings.py
-    cp conf/imports.less website/static/less/
     vim .env
     vim nomadweb/localsettings.py
-    vim website/static/less/imports.less
 
 Run the reset script corresponding to your db (sqlite or postgres)::
 
@@ -63,24 +61,36 @@ Development
 Translations
 ------------
 
-To update the translations, run ``makemessages`` and edit the new ``.po`` files with an editor like Poedit_::
+Symlink external libraries so they can be found by ``makemessages`` command::
 
-    ./manage.py makemessages -l es
+    ln -s /path/to/django-nomad-base-accounts/base_accounts
+
+Run ``makemessages`` (notice we are using the ``-s`` option to follow the
+symlinks) and edit the ``.po`` files with an editor like Poedit_::
+
+    ./manage.py makemessages -s -l es
     open locale/es/LC_MESSAGES/django.po 
 
 .. _Poedit:: http://poedit.net/
 
-Remember to change the symlink names to clean up after yourself
-and avoid clashing with the library imports::
+Remember to change the symlink names to clean up after yourself and avoid
+clashing with the library imports. The new symlink should be alos ignored
+on ``.gitignore`` but double check and add it if not, before commiting::
 
-    mv nomadblog nomadblog_symlink
     mv base_accounts base_accounts_symlink
 
 LESS to CSS
 ===========
 
-Project is deployed with CSS already compiled from LESS files. So do not
-forget to run ``lessc`` before commiting changes to the repository,
-otherwise deployments will miss them::
+Project is deployed with CSS already compiled including Twitter Bootstrap from
+LESS files and commited to the repository. First off you need to make the
+bootstrap repository and the best method so far is creating a symlink into the
+``website/static/`` repository, for example::
+
+    cd website/static/
+    ln -s /path/to/repo/bootstrap
+
+Before commiting changes to the repository, do not forget to run ``lessc`` to
+update our CSS files, otherwise deployments will miss them::
 
     lessc website/static/less/imports.less > website/static/css/styles.css
