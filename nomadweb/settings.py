@@ -28,6 +28,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.humanize',
     'django_extensions',
+    'imagekit',
     'storages',
     'gunicorn',
     'south',

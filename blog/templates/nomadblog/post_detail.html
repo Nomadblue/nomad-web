@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 
+{% load nomadblog_tags %}
+{% load imagekit %}
+
 {% block html_title %}{{ object.title }} | Nomadblue{% endblock %}
 {% block html_desc %}{{ object.summary|striptags|truncatechars:150 }}{% endblock %}
 
@@ -25,8 +28,45 @@
   <div class="post-summary">
     {{ object.summary|safe }}
   </div>
-  <div class="post-content">
-    {{ object.content|safe }}
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-1">
+          {% if use_holder_js %}
+            <img data-src="holder.js/80x80" class="img-circle">
+          {% else %}
+            {% generateimage 'nomadblog:bloguser' source=object.bloguser.image as bloguserimg %}
+            <img src="{{ bloguserimg.url }}" class="img-circle">
+          {% endif %}
+        </div>
+        <div class="col-md-11" style="padding-left:35px">
+          <p class="author"><a href="#">{{ object.bloguser.name }}</a></p>
+          <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          {{ object.bloguser.bio }}</p>
+          <p><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ object.categories.all.0 }}</a></p>
+        </div>
+      </div>
+      <div class="post-content">
+        {{ object.content|safe }}
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>About this blog</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </p>
+      <h3>Categories</h3>
+      <ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
+        {% get_blog_categories as categories %}
+        {% for category in categories %}
+        <li><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ category.name|capfirst }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
   <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/nomadblue/embed.js"></script><noscript><a href="http://nomadblue.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
