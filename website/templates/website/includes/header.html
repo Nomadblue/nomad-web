@@ -1,3 +1,10 @@
+{% load website_tags %}
+
+{% url 'home' as home_url %}
+{% url 'post_list' as post_list_url %}
+{% url 'contact_form' as contact_form_url %}
+{% url 'jobs' as jobs_url %}
+
 <div class="navbar navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -14,10 +21,10 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-div">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#" class="navbar-menu-item">HOME</a></li>
-        <li><a href="#" class="navbar-menu-item">BLOG</a></li>
-        <li><a href="#" class="navbar-menu-item">CONTACT</a></li>
-        <li><a href="#" class="navbar-menu-item">JOBS</a></li>
+        <li class="{% active_nav_menu_item request home_url %}"><a href="{{ home_url }}" class="navbar-menu-item">HOME</a></li>
+        <li class="{% active_nav_menu_item_contains request post_list_url %}"><a href="{{ post_list_url }}" class="navbar-menu-item">BLOG</a></li>
+        <li class="{% active_nav_menu_item request contact_form_url %}"><a href="{{ contact_form_url }}" class="navbar-menu-item">CONTACT</a></li>
+        <li class="{% active_nav_menu_item request jobs_url %}"><a href="{{ jobs_url }}" class="navbar-menu-item">JOBS</a></li>
       </ul>
     </div>
   </div>
