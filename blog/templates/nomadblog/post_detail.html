@@ -40,7 +40,7 @@
           {% endif %}
         </div>
         <div class="col-md-11" style="padding-left:35px">
-          <p class="author"><a href="#">{{ object.bloguser.name }}</a></p>
+          <p class="author"><a href="{{ object.bloguser.website_url|default:'/blog/' }}">{{ object.bloguser.name }}</a></p>
           <p>{{ object.bloguser.bio }}</p>
           <p><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ object.categories.all.0 }}</a></p>
         </div>
