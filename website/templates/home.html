@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load staticfiles %}
+{% load nomadblog_tags %}
 
 {% block content %}
 
@@ -106,13 +107,20 @@
 <hr>
 
 <div class="container">
-  <div class="col-md-12">
-    <div class="col-sm-8 col-sm-offset-2">
-    <h2>Blog <a href="{% url 'post_list' %}">(see all)</a></h2>
+  <div class="col-md-9">
+    <h2>Latest Blog Posts <a href="{% url 'post_list' %}">(see all)</a></h2>
     {% for post in posts %}
       {% include "blog/bits/post_list_item.html" with object=post %}
     {% endfor %}
-    </div>
+  </div>
+  <div class="col-md-3">
+    <h3>Categories</h3>
+    <ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
+      {% get_blog_categories as categories %}
+      {% for category in categories %}
+      <li><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ category.name|capfirst }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
 

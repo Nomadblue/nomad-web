@@ -1,9 +1,14 @@
-<div class="blog-item">
-  <time datetime="{{ object.pub_date }}" class="icon">
-    <em>{{ object.pub_date|date:"Y" }}</em>
-    <strong>{{ object.pub_date|date:"M" }}</strong>
-    <span>{{ object.pub_date|date:"d" }}</span>
-  </time>
-  <h3><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
-  {{ object.summary|safe }}
-</div>
+  <div class="row">
+    <div class="col-md-1">
+      <time datetime="{{ object.pub_date }}" class="icon">
+        <em>{{ object.pub_date|date:"Y" }}</em>
+        <strong>{{ object.pub_date|date:"M" }}</strong>
+        <span>{{ object.pub_date|date:"d" }}</span>
+      </time>
+    </div>
+    <div class="col-md-11">
+      <h3 style="margin-top:0"><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
+      {{ object.summary|safe }}
+    </div>
+  </div>
+  <hr>

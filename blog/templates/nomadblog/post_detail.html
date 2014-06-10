@@ -21,7 +21,7 @@
       <li><a href="{% url 'post_list' %}">Nomadblue blog</a></li>
       <li>{{ object.title }}</li>
     </ul>
-    <h1>{{ object.title }}</h1>
+    <h1 class="main-h1">{{ object.title }}</h1>
   </div>
 </div>
 <div class="container">
@@ -41,9 +41,7 @@
         </div>
         <div class="col-md-11" style="padding-left:35px">
           <p class="author"><a href="#">{{ object.bloguser.name }}</a></p>
-          <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          {{ object.bloguser.bio }}</p>
+          <p>{{ object.bloguser.bio }}</p>
           <p><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ object.categories.all.0 }}</a></p>
         </div>
       </div>
@@ -54,10 +52,7 @@
     <div class="col-md-3">
       <h3>About this blog</h3>
       <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Hello! We are Nomadblue, We are a group of technology enthusiasts building applications and first-class web tools. Experienced in entrepreneurship and lean methodologies, we have already helped a lot of startups and companies to transform their projects into something real.
       </p>
       <h3>Categories</h3>
       <ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
