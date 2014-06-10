@@ -6360,6 +6360,10 @@ a.category-lnk:focus {
 .author {
   font-size: 1.3em;
 }
+.post-author img {
+  float: left;
+  margin-right: 20px;
+}
 .main-h1 {
   margin-bottom: 30px;
 }
