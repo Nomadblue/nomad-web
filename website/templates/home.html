@@ -108,7 +108,7 @@
 
 <div class="container">
   <div class="col-md-9">
-    <h2>Latest Blog Posts <a href="{% url 'post_list' %}">(see all)</a></h2>
+    <h2 style="margin-bottom:30px">Latest Blog Posts <a href="{% url 'post_list' %}">(see all)</a></h2>
     {% for post in posts %}
       {% include "blog/bits/post_list_item.html" with object=post %}
     {% endfor %}
