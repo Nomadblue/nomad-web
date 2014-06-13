@@ -19,7 +19,9 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-div">
       <ul class="nav navbar-nav navbar-right">
+        {% comment %}
         <li><a href="{{ alt_site }}{{ request.path }}" id="switch-site" class="navbar-menu-item">{{ alt_site_text }}</a></li>
+        {% endcomment %}
         <li class="{% active_nav_menu_item request home_url %}"><a href="{{ home_url }}" class="navbar-menu-item">{% trans "HOME" %}</a></li>
         <li class="{% active_nav_menu_item_contains request post_list_url %}"><a href="{{ post_list_url }}" class="navbar-menu-item">{% trans "BLOG" %}</a></li>
         <li class="{% active_nav_menu_item request contact_form_url %}"><a href="{{ contact_form_url }}" class="navbar-menu-item">{% trans "CONTACT" %}</a></li>
