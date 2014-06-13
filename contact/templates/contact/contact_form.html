@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 
-{% block html_title %}Contact us | Nomadblue{% endblock %}
-{% block html_desc %}You need python experts? You want to build the next iOS big hit? You dream of launching that idea? Let's talk!{% endblock %}
+{% load i18n %}
+
+{% block html_title %}{% trans "Contact us" %} | Nomadblue{% endblock %}
+{% block html_desc %}{% trans "You need Python and Django experts? You want to build the next app big hit? You dream of launching that idea? Let's talk!" %}{% endblock %}
 
 {% block open_graph %}
 <meta property="og:type" content="company">
-<meta property="og:title" content="Nomadblue - Web development for startups and smart companies">
+<meta property="og:title" content="{% trans "Nomadblue - Your CTO on-demand" %}">
 <meta property="og:url" content="http://www.nomadblue.com{% url 'contact_form' %}">
-<meta property="og:description" content="We invest in talent to create disrupting businesses. We have the tools and the expertise for your deas.">
+<meta property="og:description" content="{% trans "We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas" %}">
 {% endblock %}
 
 
@@ -15,55 +17,55 @@
 <div class="container">
   <div class="title-lead">
     <ul class="list-unstyled list-inline">
-      <li><a href="{% url 'home' %}">Home</a></li>
-      <li>Contact us</li>
+      <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li>{% trans "Contact us" %}</li>
     </ul>
-    <h1>Contact us</h1>
+    <h1>{% trans "Contact us" %}</h1>
   </div>
 </div>
 <div class="container">
-  <p class="post-summary">Do you have a question? Do you want to pitch us your idea? Maybe you just want to say hi or leave us a comment? Any case, we'd love to hear from you.</p>
+  <p class="post-summary">{% trans "Do you have a question? Do you want to pitch us your idea? Maybe you just want to say hi or leave us a comment? Any case, we'd love to hear from you." %}</p>
   <form action="{% url 'contact_form' %}" method="post" id="contact-form" class="form-horizontal" role="form">
     {% csrf_token %}
     <div class="form-group">
-      <label for="name" class="col-sm-2 control-label">Your name</label>
+      <label for="name" class="col-sm-2 control-label">{% trans "Your name" %}</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" name="name" id="name" placeholder="Your name here">
+        <input type="text" class="form-control" name="name" id="name" placeholder="{% trans "Your name here" %}">
       </div>
     </div>
     <div class="form-group">
-      <label for="phone" class="col-sm-2 control-label">Phone (optional)</label>
+      <label for="phone" class="col-sm-2 control-label">{% trans "Phone (optional)" %}</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" name="phone" id="phone" placeholder="e.g. +56 9 58349448">
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="{% trans "e.g. +56 9 58349448" %}">
       </div>
     </div>
     <div class="form-group">
-      <label for="email" class="col-sm-2 control-label">Email address</label>
+      <label for="email" class="col-sm-2 control-label">{% trans "Email address" %}</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" name="email" id="email" placeholder="your@email.com">
+        <input type="text" class="form-control" name="email" id="email" placeholder="{% trans "your@email.com" %}">
       </div>
     </div>
     <div class="form-group">
-      <label for="message" class="col-sm-2 control-label">Your message</label>
+      <label for="message" class="col-sm-2 control-label">{% trans "Your message" %}</label>
       <div class="col-sm-8">
         <textarea class="form-control" name="message" id="message" rows="8"></textarea>
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <input type="submit" class="btn btn-default" value="Send">
+        <input type="submit" class="btn btn-default" value="{% trans "Send" %}">
       </div>
     </div>
   </form>
 </div>
 
 <div class="container">
-  <h2>Our offices in Santiago, Chile</h2>
+  <h2>{% trans "Our offices in Santiago, Chile" %}</h2>
   <div class="post-summary">
     <ul>
-      <li>Email: info (at) nomadblue.com</li>
-      <li>Phone: +56 9 58791449</li>
-      <li>Address: Almirante Zegers 764, Providencia, Santiago (Chile)</li>
+      <li>{% trans "Email: info (at) nomadblue.com" %}</li>
+      <li>{% trans "Phone: +56 9 58791449" %}</li>
+      <li>{% trans "Address: Almirante Zegers 764, Providencia, Santiago (Chile)" %}</li>
     </ul>
   </div>
   <div class="row">

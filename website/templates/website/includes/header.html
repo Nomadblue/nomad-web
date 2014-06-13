@@ -1,4 +1,5 @@
 {% load website_tags %}
+{% load i18n %}
 
 {% url 'home' as home_url %}
 {% url 'post_list' as post_list_url %}
@@ -15,16 +16,14 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand logo-home" href="{% url 'home' %}">Nomadblue</a>
-      {% comment %}
-      <span class="claim">"Your CTO on-demand"</span>
-      {% endcomment %}
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-div">
       <ul class="nav navbar-nav navbar-right">
-        <li class="{% active_nav_menu_item request home_url %}"><a href="{{ home_url }}" class="navbar-menu-item">HOME</a></li>
-        <li class="{% active_nav_menu_item_contains request post_list_url %}"><a href="{{ post_list_url }}" class="navbar-menu-item">BLOG</a></li>
-        <li class="{% active_nav_menu_item request contact_form_url %}"><a href="{{ contact_form_url }}" class="navbar-menu-item">CONTACT</a></li>
-        <li class="{% active_nav_menu_item request jobs_url %}"><a href="{{ jobs_url }}" class="navbar-menu-item">JOBS</a></li>
+        <li><a href="{{ alt_site }}{{ request.path }}" id="switch-site" class="navbar-menu-item">{{ alt_site_text }}</a></li>
+        <li class="{% active_nav_menu_item request home_url %}"><a href="{{ home_url }}" class="navbar-menu-item">{% trans "HOME" %}</a></li>
+        <li class="{% active_nav_menu_item_contains request post_list_url %}"><a href="{{ post_list_url }}" class="navbar-menu-item">{% trans "BLOG" %}</a></li>
+        <li class="{% active_nav_menu_item request contact_form_url %}"><a href="{{ contact_form_url }}" class="navbar-menu-item">{% trans "CONTACT" %}</a></li>
+        <li class="{% active_nav_menu_item request jobs_url %}"><a href="{{ jobs_url }}" class="navbar-menu-item">{% trans "JOBS" %}</a></li>
       </ul>
     </div>
   </div>

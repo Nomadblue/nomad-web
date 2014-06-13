@@ -1,3 +1,5 @@
+#! -.- coding: utf-8 -.-
+
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -64,11 +66,16 @@ ROOT_URLCONF = 'nomadweb.urls'
 
 WSGI_APPLICATION = 'nomadweb.wsgi.application'
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = env_var('LANGUAGE_CODE', 'en')
 TIME_ZONE = 'America/Chicago'
 USE_TZ = False
-USE_I18N = False
-USE_L10N = False
+USE_I18N = True
+USE_L10N = True
+
+# i18n
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 LOGGING = {
     'version': 1,
@@ -156,6 +163,12 @@ TEMPLATE_DEVEL_HELPERS = {
     'use_holder_js': env_var('USE_HOLDER_JS', False),
     # Inject some CSS hacks as helpers to scaffolding, styling, etc
     'use_dev_css': env_var('USE_DEV_CSS', False),
+    # Use proper locale in FB open graph
+    'og_locale': env_var('OG_LOCALE', 'en_us'),
+    # Switch to this site
+    'alt_site': env_var('ALT_SITE', 'http://www.nomadblue.cl'),
+    # Switch to this site link text
+    'alt_site_text': env_var('ALT_SITE_TEXT', 'Versión español'),
 }
 
 try:

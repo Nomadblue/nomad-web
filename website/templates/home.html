@@ -1,120 +1,27 @@
 {% extends "base.html" %}
 
+{% load i18n %}
 {% load staticfiles %}
 {% load nomadblog_tags %}
 
 {% block content %}
 
-<section id="home-lead">
-  <div class="home-lead-parent">
-    <div class="home-lead-child">
-      <div class="home-lead-in">
-        <div class="home-lead-in-text">
-          <h1>We are Nomadblue, your <br>CTO on-demand</h1>
-          <h3>We help launch disruptive companies bringing our operational expertise right to their core businesses</h3>
-        </div>
-        <div class="see-more">
-          <a id="button" href="#triptic" class="btn btn-primary">Scroll down</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div id="triptic" class="container home-triptic">
-  <div class="row">
-    <div class="col-lg-4">
-      <a id="triptic1" href="#">Anchor Text</a>
-      <h2>Freedom to innovate</h2>
-      <p>Imagine you could wrap up entrepreneurship visionaries, awesome code ninjas, UI/UX design gurus and top-notch tech evangelists into <b>a single super-entity</b> and incorporate it to your business or project. You are liberated from the difficulties of the building process, so suddenly all your constraints disappear allowing you to focus on what really matters:<br><b>your product, your clients, your mission</b>.</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <a id="triptic2" href="#">Anchor Text</a>
-      <h2>Boostrap your growth</h2>
-      <p>We propose you to build <b>MVPs (minimal viable products)</b> and incrementally turn them into full-featured products. Time, resources, goals and your economy they all align together to streamline the development progress; together we set the pace to <b>organic growth</b> and the tools to <b>business wisdom</b>.</p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <a id="triptic3" href="#">Anchor Text</a>
-      <h2>Startups == #noestimates</h2>
-      <p>Innovative projects need a flexible environment to build prototypes and validate their business models quickly. Get rid of <b>fixed estimates and requirements</b>, because they are like <b>handcuffs to your ideas</b>! Let us guide you and your team through all the different stages, seamlessly and in a radical immersive routine to keep you aware and collaborative.</p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-</div>
-
-<div class="container about-us-quote">
-  <div>
-    <p>We are a group of technology enthusiasts building applications and first-class web tools. Experienced in entrepreneurship and lean methodologies, we have already helped a lot of startups and companies to transform their projects into something real.</p>
-  </div>
-</div>
-
-<div class="container">
-  <div class="col-md-12">
-    <h2>Our latest works</h2>
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="row">
-            <div class="col-sm-6">
-              <a href="#" class="thumbnail"><img src="{% static 'img/rnovo_showcase.png' %}" style="width:100%;"></a>
-              <div class="caption">
-                <h3>Rnovo - Online Trademark Registration</h3>
-                <p>Register your trademark in an easy, comprehensible and secure way, at an unbeatable price</p>
-              </div>
-            </div>
-            {% comment %}
-            <div class="col-sm-6">
-              <a href="#" class="thumbnail"><img src="{% static 'img/eduquia_showcase.png' %}" style="width:100%;"></a>
-              <div class="caption">
-                <h3>Eduquia - Join the e-learning revolution</h3>
-                <p>A full-stack platform to enchance your students' learning experience, using videos, quizs, community chats and more</p>
-              </div>
-            </div>
-            {% endcomment %}
-            <div class="col-sm-6">
-              <a href="#" class="thumbnail"><img src="{% static 'img/ahorramos_showcase.png' %}" style="width:100%;"></a>
-              <div class="caption">
-                <h3>Ahorramos - Financial recommendations</h3>
-                <p>Let these guys guide you through the process of finding out the best credit card, insurance, mortgage, etc</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-sm-6">
-              <a href="#" class="thumbnail"><img src="{% static 'img/blinkme_showcase.png' %}" style="width:100%;"></a>
-              <div class="caption">
-                <h3>Blinkme app</h3>
-                <p>Send pictures to your friends which can be seen only for a few seconds, before they disappear forever without a trace</p>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <a href="#" class="thumbnail"><img src="{% static 'img/activism_showcase.png' %}" style="width:100%;"></a>
-              <div class="caption">
-                <h3>Activism - We can change the world</h3>
-                <p>Activism is the first and foremost location for hosting your online petition</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lt;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&gt;</a>
-    </div> <!--/myCarousel-->
-  </div>
-</div>
+{% include "website/includes/home_lead.html" %}
+{% include "website/includes/home_triptic.html" %}
+{% include "website/includes/home_quote.html" %}
+{% include "website/includes/home_showcase.html" %}
 
 <hr>
 
 <div class="container">
   <div class="col-md-9">
-    <h2 style="margin-bottom:30px">Latest Blog Posts <a href="{% url 'post_list' %}">(see all)</a></h2>
+    <h2 style="margin-bottom:30px">{% trans "Latest blog posts" %} <a href="{% url 'post_list' %}">{% trans "(see all)" %}</a></h2>
     {% for post in posts %}
       {% include "blog/bits/post_list_item.html" with object=post %}
     {% endfor %}
   </div>
   <div class="col-md-3">
-    <h3>Categories</h3>
+    <h3>{% trans "Categories" %}</h3>
     <ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
       {% get_blog_categories as categories %}
       {% for category in categories %}

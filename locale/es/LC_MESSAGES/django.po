@@ -1,0 +1,430 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nomadblue\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-13 12:58-0500\n"
+"PO-Revision-Date: 2014-06-13 14:00-0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Nomadblue <info@nomadblue.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.5\n"
+
+#: contact/templates/contact/contact_form.html:5
+#: contact/templates/contact/contact_form.html:21
+#: contact/templates/contact/contact_form.html:23
+msgid "Contact us"
+msgstr "Contacta con nosotros"
+
+#: contact/templates/contact/contact_form.html:6
+msgid ""
+"You need Python and Django experts? You want to build the next app big hit? "
+"You dream of launching that idea? Let's talk!"
+msgstr ""
+"Necesitas expertos en Python y Django? Quieres construir el próximo hit en "
+"aplicaciones móviles? Sueñas con lanzar esa idea? Hablemos!"
+
+#: contact/templates/contact/contact_form.html:10
+#: website/templates/base.html:38
+msgid "Nomadblue - Your CTO on-demand"
+msgstr "Nomadblue, tu CTO \"on-demand\""
+
+#: contact/templates/contact/contact_form.html:12
+#: website/templates/base.html:8 website/templates/base.html.py:40
+#: website/templates/jobs.html:12
+msgid ""
+"We invest in talent to create disrupting businesses. We have the tools and "
+"the expertise for your ideas"
+msgstr ""
+"Invertimos en atento para crear negocios disruptivos. Tenemos las "
+"herramientas y el expertise para tus ideas."
+
+#: contact/templates/contact/contact_form.html:20
+#: website/templates/jobs.html:20
+msgid "Home"
+msgstr "Inicio"
+
+#: contact/templates/contact/contact_form.html:27
+msgid ""
+"Do you have a question? Do you want to pitch us your idea? Maybe you just "
+"want to say hi or leave us a comment? Any case, we'd love to hear from you."
+msgstr ""
+"Tienes alguna pregunta? Quieres explicarnos tu idea? Quizá sólo quieres "
+"decir hola o dejarnos algún comentario? De cualquier modo, nos encantaría "
+"escucharte."
+
+#: contact/templates/contact/contact_form.html:31
+msgid "Your name"
+msgstr "Tu nombre"
+
+#: contact/templates/contact/contact_form.html:33
+msgid "Your name here"
+msgstr "Tu nombre aquí"
+
+#: contact/templates/contact/contact_form.html:37
+msgid "Phone (optional)"
+msgstr "Teléfono (opcional)"
+
+#: contact/templates/contact/contact_form.html:39
+msgid "e.g. +56 9 58349448"
+msgstr "Por ejemplo: +56 9 58349448"
+
+#: contact/templates/contact/contact_form.html:43
+msgid "Email address"
+msgstr "Dirección de email"
+
+#: contact/templates/contact/contact_form.html:45
+msgid "your@email.com"
+msgstr "tu@email.com"
+
+#: contact/templates/contact/contact_form.html:49
+msgid "Your message"
+msgstr "Tu mensaje"
+
+#: contact/templates/contact/contact_form.html:56
+msgid "Send"
+msgstr "Enviar"
+
+#: contact/templates/contact/contact_form.html:63
+msgid "Our offices in Santiago, Chile"
+msgstr "Nuestras oficinas en Santiago de Chile"
+
+#: contact/templates/contact/contact_form.html:66
+msgid "Email: info (at) nomadblue.com"
+msgstr "Email: info (at) nomadblue.com"
+
+#: contact/templates/contact/contact_form.html:67
+msgid "Phone: +56 9 58791449"
+msgstr "Teléfono: +56 9 58791449"
+
+#: contact/templates/contact/contact_form.html:68
+msgid "Address: Almirante Zegers 764, Providencia, Santiago (Chile)"
+msgstr "Dirección: Almirante Zegers 764, Providencia, Santiago (Chile)"
+
+#: nomadblog/models.py:10
+msgid "iso country code"
+msgstr "código iso de país"
+
+#: nomadblog/models.py:11 nomadblog/models.py:53 nomadblog/models.py:72
+msgid "name"
+msgstr "nombre"
+
+#: nomadblog/models.py:17
+msgid "country"
+msgstr "país"
+
+#: nomadblog/models.py:18 nomadblog/models.py:37
+msgid "countries"
+msgstr "países"
+
+#: nomadblog/models.py:22 nomadblog/models.py:28
+msgid "blog hub"
+msgstr "blog hub"
+
+#: nomadblog/models.py:29
+msgid "blog hubs"
+msgstr "blog hubs"
+
+#: nomadblog/models.py:33 nomadblog/models.py:100
+msgid "title"
+msgstr "título"
+
+#: nomadblog/models.py:34 nomadblog/models.py:54 nomadblog/models.py:73
+#: nomadblog/models.py:101
+msgid "slug"
+msgstr "slug"
+
+#: nomadblog/models.py:35 nomadblog/models.py:74 nomadblog/models.py:75
+msgid "description"
+msgstr "descripción"
+
+#: nomadblog/models.py:36 nomadblog/models.py:102
+msgid "creation date"
+msgstr "fecha de creación"
+
+#: nomadblog/models.py:38
+msgid "users"
+msgstr "usuarios"
+
+#: nomadblog/models.py:39
+msgid "hubs"
+msgstr "hubs"
+
+#: nomadblog/models.py:40 nomadblog/models.py:59 nomadblog/models.py:76
+msgid "seo title"
+msgstr "título seo"
+
+#: nomadblog/models.py:41 nomadblog/models.py:60 nomadblog/models.py:77
+msgid "seo meta description"
+msgstr "meta descripción seo"
+
+#: nomadblog/models.py:44 nomadblog/models.py:55
+msgid "blog"
+msgstr "blog"
+
+#: nomadblog/models.py:45
+msgid "blogs"
+msgstr "blogs"
+
+#: nomadblog/models.py:52
+msgid "user"
+msgstr "usuario"
+
+#: nomadblog/models.py:56
+msgid "bio"
+msgstr "bio"
+
+#: nomadblog/models.py:57
+msgid "website url"
+msgstr "website url"
+
+#: nomadblog/models.py:58
+msgid "image"
+msgstr "imagen"
+
+#: nomadblog/models.py:67 nomadblog/models.py:99
+msgid "blog user"
+msgstr "usuario de blog"
+
+#: nomadblog/models.py:68
+msgid "blog users"
+msgstr "usuarios de blog"
+
+#: nomadblog/models.py:83
+msgid "category"
+msgstr "categoría"
+
+#: nomadblog/models.py:84 nomadblog/models.py:105
+msgid "categories"
+msgstr "categorías"
+
+#: nomadblog/models.py:103
+msgid "publication date"
+msgstr "fecha de publicación"
+
+#: nomadblog/models.py:104
+msgid "status"
+msgstr "status"
+
+#: nomadblog/models.py:106
+msgid "content"
+msgstr "contenido"
+
+#: nomadblog/models.py:107
+msgid "featured countries"
+msgstr "países destacados"
+
+#: website/templates/base.html:7
+msgid "Your CTO on-demand"
+msgstr "Tu CTO \"on-demand\""
+
+#: website/templates/home.html:18
+msgid "Latest blog posts"
+msgstr "Últimos artículos de blog"
+
+#: website/templates/home.html:18
+msgid "(see all)"
+msgstr "(ver todos)"
+
+#: website/templates/home.html:24
+msgid "Categories"
+msgstr "Categorías"
+
+#: website/templates/jobs.html:5
+msgid "Jobs and vacancies"
+msgstr "trabajos y vacantes"
+
+#: website/templates/jobs.html:6
+msgid "Jobs and vacancies at Nomadblue. Work with us, we are hiring!"
+msgstr ""
+"Trabajos y vacantes en Nomadblue. Trabaja con nosotros, estamos contratando!"
+
+#: website/templates/jobs.html:10
+msgid ""
+"Jobs and vacancies at Nomadblue - Web development for startups and smart "
+"companies"
+msgstr ""
+"Puestos de trabajo y plazas vacantes en Nomadblue - Desarrollo web para "
+"startups y empresas inteligentes"
+
+#: website/templates/jobs.html:21
+msgid "Jobs"
+msgstr "Trabajos"
+
+#: website/templates/jobs.html:23
+msgid "Work with us, we are hiring!"
+msgstr "Trabaja con nosotros, estamos contratando!"
+
+#: website/templates/jobs.html:27
+msgid "Currently these are the jobs we are offering:"
+msgstr "Actualmente estos son los trabajos que estamos ofreciendo:"
+
+#: website/templates/jobs.html:29
+msgid "Python/Django web developers"
+msgstr "Desarrolladores web Python/Django"
+
+#: website/templates/website/includes/footer.html:7
+msgid ""
+"We invest in talent to create disrupting businesses.<br>We have the tools "
+"and the expertise for your ideas."
+msgstr ""
+"Invertimos en atento para crear negocios disruptivos.<br>Tenemos las "
+"herramientas y el expertise para tus ideas."
+
+#: website/templates/website/includes/header.html:22
+msgid "HOME"
+msgstr "INICIO"
+
+#: website/templates/website/includes/header.html:23
+msgid "BLOG"
+msgstr "BLOG"
+
+#: website/templates/website/includes/header.html:24
+msgid "CONTACT"
+msgstr "CONTACTO"
+
+#: website/templates/website/includes/header.html:25
+msgid "JOBS"
+msgstr "EMPLEOS"
+
+#: website/templates/website/includes/home_lead.html:8
+msgid "We are Nomadblue, your CTO on-demand"
+msgstr "Somos Nomadblue, tu CTO \"on-demand\""
+
+#: website/templates/website/includes/home_lead.html:9
+msgid ""
+"We help launch disruptive companies by bringing our operational expertise "
+"right into their core businesses"
+msgstr ""
+"Ayudamos a lanzar empresas innovadoras introduciendo nuestro expertise en el "
+"corazón mismo de sus negocios"
+
+#: website/templates/website/includes/home_lead.html:12
+msgid "Scroll down"
+msgstr "Scroll abajo"
+
+#: website/templates/website/includes/home_quote.html:5
+msgid ""
+"We are a group of technology enthusiasts building applications and first-"
+"class web tools. Experienced in entrepreneurship and lean methodologies, we "
+"have already helped a lot of startups and companies to transform their "
+"projects into something real."
+msgstr ""
+"Somos un grupo de entusiastas de la tecnología que construimos aplicaciones "
+"y herramientas web de primera clase. Experimentados en emprendimiento y "
+"metodologías lean, ya hemos ayudado a muchas startups y empresas a hacer "
+"realidad sus proyectos."
+
+#: website/templates/website/includes/home_showcase.html:6
+msgid "Our latest works"
+msgstr "Nuestros últimos trabajos"
+
+#: website/templates/website/includes/home_showcase.html:14
+msgid "Rnovo - Online Trademark Registration"
+msgstr "Rnovo - Registro de marcas online"
+
+#: website/templates/website/includes/home_showcase.html:15
+msgid ""
+"Register your trademark in an easy, comprehensible and secure way, at an "
+"unbeatable price"
+msgstr ""
+"Registra tu marca de manera sencilla, comprensible y segura, a un precio "
+"imbatible"
+
+#: website/templates/website/includes/home_showcase.html:31
+msgid "Ahorramos - Financial recommendations"
+msgstr "Ahorramos - Recomendador financiero"
+
+#: website/templates/website/includes/home_showcase.html:32
+msgid ""
+"Let these guys guide you through the process of finding out the best credit "
+"card, insurance, mortgage, etc"
+msgstr ""
+"Deja en manos de estos tipos el proceso de encontrar la mejor tarjeta de "
+"crédito, seguro, hipoteca, etc"
+
+#: website/templates/website/includes/home_showcase.html:42
+msgid "Blinkme app"
+msgstr "Blinkme app"
+
+#: website/templates/website/includes/home_showcase.html:43
+msgid ""
+"Send pictures to your friends which can be seen only for a few seconds, "
+"before they disappear forever without a trace"
+msgstr ""
+"Envía a tus amigos fotografías que pueden ser vistas sólo por unos segundos, "
+"antes de que desaparezcan sin dejar rastro"
+
+#: website/templates/website/includes/home_showcase.html:49
+msgid "Activism - We can change the world"
+msgstr "Activism - Podemos cambiar el mundo"
+
+#: website/templates/website/includes/home_showcase.html:50
+msgid ""
+"Activism is the first and foremost location for hosting your online petition"
+msgstr "Activism es el mejor sitio para publicar tus peticiones online"
+
+#: website/templates/website/includes/home_triptic.html:7
+msgid "Freedom to innovate"
+msgstr "Libertad para innovar"
+
+#: website/templates/website/includes/home_triptic.html:8
+msgid ""
+"Imagine you could wrap up entrepreneurship visionaries, awesome code ninjas, "
+"UI/UX design gurus and top-notch tech evangelists into <b>a single super-"
+"entity</b> and incorporate it to your business or project. You are liberated "
+"from the difficulties of the building process, so suddenly all your "
+"constraints disappear allowing you to focus on what really matters:"
+"<br><b>your product, your clients, your mission</b>."
+msgstr ""
+"Imagina que pudieras reunir a visionarios emprendedores, asombrosos code "
+"ninjas, gurus del diseño y la usabilidad y evangelizadores de la tecnología, "
+"todos en una super-entidad para incorporarlos en tu negocio o proyecto. "
+"Quedas pues liberado de las dificultades del proceso de  desarrollo, y de "
+"repente todas tus ataduras desaparecen permitiéndote enfocarte en lo que "
+"realmente importa: <br><b>tu producto, tus clientes, tu misión</b>."
+
+#: website/templates/website/includes/home_triptic.html:12
+msgid "Boostrap your growth"
+msgstr "Optimiza tu crecimiento"
+
+#: website/templates/website/includes/home_triptic.html:13
+msgid ""
+"We propose you to build <b>MVPs (minimal viable products)</b> and "
+"incrementally turn them into full-featured products. Time, resources, goals "
+"and your economy they all align together to streamline the development "
+"progress; together we set the pace to <b>organic growth</b> and the tools to "
+"<b>business wisdom</b>."
+msgstr ""
+"Te proponemos construir <b>MVP (en inglés \"productos mínimos viables\")</b> "
+"y progresivamente convertirlos en productos completos. Tiempo, recursos, "
+"objetivos y presupuesto se alinean para optimizar el avance del desarrollo; "
+"juntos establecemos el ritmo para un <b>crecimiento orgánico</b> y la "
+"herramientas para la <b>inteligencia de negocio</b>."
+
+#: website/templates/website/includes/home_triptic.html:17
+msgid "Startups == #noestimates"
+msgstr "Startups == #noestimates"
+
+#: website/templates/website/includes/home_triptic.html:18
+msgid ""
+"Innovative projects need a flexible environment to build prototypes and "
+"validate their business models quickly. Get rid of <b>fixed estimates and "
+"requirements</b>, because they are like <b>handcuffs to your ideas</b>! Let "
+"us guide you and your team through all the different stages, seamlessly and "
+"in a radical immersive routine to keep you aware and collaborative."
+msgstr ""
+"Los proyectos innovadores necesitan un entorno flexible para construir "
+"prototipos y validar sus modelos de negocio rápidamente. Libérate de "
+"<b>presupuestos y listas de requisitos fijos</b>, porque son como "
+"<b>cadenas</b> para tus ideas</b>! Déjanos guiarte a ti y a tu equipo a "
+"través de los diferentes estadios, de manera ágil y aplicando una rutina "
+"inversiva para mantenerte consciente y colaborativo."

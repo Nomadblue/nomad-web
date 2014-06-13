@@ -1,0 +1,59 @@
+{% load i18n %}
+{% load staticfiles %}
+
+<div class="container">
+  <div class="col-md-12">
+    <h2>{% trans "Our latest works" %}</h2>
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="#" class="thumbnail"><img src="{% static 'img/rnovo_showcase.png' %}" style="width:100%;"></a>
+              <div class="caption">
+                <h3>{% trans "Rnovo - Online Trademark Registration" %}</h3>
+                <p>{% trans "Register your trademark in an easy, comprehensible and secure way, at an unbeatable price" %}</p>
+              </div>
+            </div>
+            {% comment %}
+            <div class="col-sm-6">
+              <a href="#" class="thumbnail"><img src="{% static 'img/eduquia_showcase.png' %}" style="width:100%;"></a>
+              <div class="caption">
+                <h3>Eduquia - Join the e-learning revolution</h3>
+                <p>A full-stack platform to enchance your students' learning experience, using videos, quizs, community chats and more</p>
+              </div>
+            </div>
+            {% endcomment %}
+            <div class="col-sm-6">
+              <a href="#" class="thumbnail"><img src="{% static 'img/ahorramos_showcase.png' %}" style="width:100%;"></a>
+              <div class="caption">
+                <h3>{% trans "Ahorramos - Financial recommendations" %}</h3>
+                <p>{% trans "Let these guys guide you through the process of finding out the best credit card, insurance, mortgage, etc" %}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="#" class="thumbnail"><img src="{% static 'img/blinkme_showcase.png' %}" style="width:100%;"></a>
+              <div class="caption">
+                <h3>{% trans "Blinkme app" %}</h3>
+                <p>{% trans "Send pictures to your friends which can be seen only for a few seconds, before they disappear forever without a trace" %}</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <a href="#" class="thumbnail"><img src="{% static 'img/activism_showcase.png' %}" style="width:100%;"></a>
+              <div class="caption">
+                <h3>{% trans "Activism - We can change the world" %}</h3>
+                <p>{% trans "Activism is the first and foremost location for hosting your online petition" %}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lt;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&gt;</a>
+    </div> <!--/myCarousel-->
+  </div>
+</div>

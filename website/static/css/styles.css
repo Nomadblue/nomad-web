@@ -6105,11 +6105,9 @@ body {
   display: inline-block;
   margin-left: 0px !important;
 }
-.navbar .claim {
-  position: relative;
-  right: -80px;
-  bottom: 6px;
-  color: #999;
+.navbar a#switch-site {
+  font-size: 1em;
+  color: #ff7f66;
 }
 #home-lead {
   font-family: Dosis, Helvetica, Arial, sans-serif;
