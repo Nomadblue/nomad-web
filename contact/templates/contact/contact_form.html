@@ -6,9 +6,10 @@
 {% block html_desc %}{% trans "You need Python and Django experts? You want to build the next app big hit? You dream of launching that idea? Let's talk!" %}{% endblock %}
 
 {% block open_graph %}
-<meta property="og:type" content="company">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
 <meta property="og:title" content="{% trans "Nomadblue - Your CTO on-demand" %}">
-<meta property="og:url" content="http://www.nomadblue.com{% url 'contact_form' %}">
+<meta property="og:url" content="{{ site_url }}{% url 'contact_form' %}">
 <meta property="og:description" content="{% trans "We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas" %}">
 {% endblock %}
 

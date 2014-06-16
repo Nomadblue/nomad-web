@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:image" content="{{ object.pic.url }}">
 <meta property="og:title" content="{{ object.title }}">
-<meta property="og:url" content="http://www.nomadblue.com{{ object.get_absolute_url }}">
+<meta property="og:url" content="{{ site_url }}{{ object.get_absolute_url }}">
 <meta property="og:description" content="{{ object.summary|striptags|truncatechars:300 }}">
 {% endblock %}
 
@@ -19,7 +19,7 @@
 <div class="container">
   <div class="title-lead">
     <ul class="list-unstyled list-inline">
-      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
       <li><a href="{% url 'post_list' %}">Nomadblue blog</a></li>
       <li>{{ object.title }}</li>
     </ul>
@@ -77,9 +77,9 @@
 
     </div>
     <div class="col-md-3">
-      <h3>About this blog</h3>
+      <h3>{% trans "About this blog" %}</h3>
       <p>{% trans "Hello! We are Nomadblue, a group of technology enthusiasts building applications and first-class web tools. Experienced in entrepreneurship and lean methodologies, we have already helped a lot of startups and companies to transform their projects into something real." %}</p>
-      <h3>Categories</h3>
+      <h3>{% trans "Categories" %}</h3>
       <ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
         {% get_blog_categories as categories %}
         {% for category in categories %}

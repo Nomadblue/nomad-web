@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
-{% block html_title %}Python Jobs | Nomadblue{% endblock %}
-{% block html_desc %}Jobs and vacancies for Python at Nomadblue. Work with us, we are hiring!{% endblock %}
+{% block html_title %}{% trans "Python Jobs" %} | Nomadblue{% endblock %}
+{% block html_desc %}{% trans "Python jobs and vacancies at Nomadblue. Work with us, we are hiring!" %}{% endblock %}
 
 {% block open_graph %}
-<meta property="og:type" content="company">
-<meta property="og:title" content="Jobs and vacancies for Python at Nomadblue - Web development for startups and smart companies">
-<meta property="og:url" content="http://www.nomadblue.com{% url 'jobs' %}">
-<meta property="og:description" content="We invest in talent to create disrupting businesses. We have the tools and the expertise for your deas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
+<meta property="og:title" content="{% trans "Python jobs and vacancies at Nomadblue - Web development for startups and smart companies" %}">
+<meta property="og:url" content="{{ site_url }}{% url 'jobs' %}">
+<meta property="og:description" content="{% trans "We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas" %}">
 {% endblock %}
 
 {% block content %}

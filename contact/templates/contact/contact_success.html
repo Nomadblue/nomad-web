@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 
-{% block html_title %}Thank you | Nomadblue{% endblock %}
-{% block html_desc %}Thanks for contacting us!{% endblock %}
+{% block html_title %}{% trans "Thank you" %} | Nomadblue{% endblock %}
+{% block html_desc %}{% trans "Thanks for contacting us!" %}{% endblock %}
 
 {% block open_graph %}
-<meta property="og:type" content="company">
-<meta property="og:title" content="Nomadblue - Web development for startups and smart companies">
-<meta property="og:url" content="http://www.nomadblue.com{% url 'contact_success' %}">
-<meta property="og:description" content="We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
+<meta property="og:title" content="{% trans "Nomadblue - Web development for startups and smart companies" %}">
+<meta property="og:url" content="{{ site_url }}{% url 'contact_success' %}">
+<meta property="og:description" content="{% trans "We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas" %}">
 {% endblock %}
 
 {% block content %}

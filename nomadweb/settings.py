@@ -59,7 +59,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'django.core.context_processors.request',
-    'website.context_processors.template_devel_helpers',
+    'website.context_processors.template_extra_context',
 )
 
 ROOT_URLCONF = 'nomadweb.urls'
@@ -156,7 +156,9 @@ ENABLE_DEBUG_TOOLBAR = env_var('ENABLE_DEBUG_TOOLBAR', False)
 # If False, it will use S3
 LOCAL_STORAGE = env_var('LOCAL_STORAGE', False)
 
-TEMPLATE_DEVEL_HELPERS = {
+TEMPLATE_EXTRA_CONTEXT = {
+    # Site url, no trailing slah (me no like contrib.sites, ugh)
+    'site_url': env_var('SITE_URL', 'http://www.nomadblue.com'),
     # Compile LESS using client-side Javascript (only for dev envs!)
     'use_less': env_var('USE_LESS', False),
     # Use holder.js to dinamically render local customizable placeholders

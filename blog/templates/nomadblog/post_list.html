@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
-{% block html_title %}Nomadblue Blog{% endblock %}
-{% block html_desc %}This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.{% endblock %}
+{% load i18n %}
+
+{% block html_title %}{% trans "Nomadblue Blog" %}{% endblock %}
+{% block html_desc %}{% trans "This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you." %}{% endblock %}
 
 {% block open_graph %}
-<meta property="og:type" content="company">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
 <meta property="og:title" content="Nomadblue blog - Python, Django, web development">
-<meta property="og:url" content="http://www.nomadblue.com{% url 'post_list' %}">
-<meta property="og:description" content="This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.">
+<meta property="og:url" content="{{ site_url }}{% url 'post_list' %}">
+<meta property="og:description" content="{% trans "This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you." %}">
 {% endblock %}
 
 {% block content %}
@@ -15,12 +18,11 @@
 <div class="container">
   <div class="title-lead">
     <ul class="list-unstyled list-inline">
-      <li><a href="{% url 'home' %}">Home</a></li>
-      <li>Nomadblue blog</li>
-      <li>{{ object.title }}</li>
+      <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li>{{ blog.title }}</li>
     </ul>
     {% if category %}
-      <h1>Latest posts by category '{{ category }}'</h1>
+      <h1>{% trans "Latest posts by category" %} '{{ category }}'</h1>
     {% else %}
       <h1 class="main-h1">Blog</h1>
     {% endif %}

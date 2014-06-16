@@ -17,8 +17,8 @@ urlpatterns = patterns(
     url(r'^subscribe/$', SubscriberCreateView.as_view(), name='subscribe'),
     url(r'^contact/', include('contact.urls')),
     url(r'^blog/', include('nomadblog.urls')),
-    url(r'^feeds/latest/$', LatestEntries()),
-    url(r'^feeds/django/$', LatestEntriesDjango()),
-    url(r'^feeds/python/$', LatestEntriesPython()),
+    url(r'^feeds/latest/$', LatestEntries(), name='latest_entries'),
+    url(r'^feeds/django/$', LatestEntriesDjango(), name='latest_entries_django'),
+    url(r'^feeds/python/$', LatestEntriesPython(), name='latest_entries_python'),
     url(r'^%s' % settings.ADMIN_URL, include(admin.site.urls)),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

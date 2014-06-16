@@ -4,9 +4,10 @@
 {% block html_desc %}This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.{% endblock %}
 
 {% block open_graph %}
-<meta property="og:type" content="company">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
 <meta property="og:title" content="Nomadblue blog - Python, Django, web development">
-<meta property="og:url" content="http://www.nomadblue.com{% url 'post_list' %}">
+<meta property="og:url" content="{{ site_url }}{% url 'post_list' %}">
 <meta property="og:description" content="This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.">
 {% endblock %}
 
