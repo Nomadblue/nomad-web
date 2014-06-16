@@ -164,7 +164,7 @@ TEMPLATE_DEVEL_HELPERS = {
     # Inject some CSS hacks as helpers to scaffolding, styling, etc
     'use_dev_css': env_var('USE_DEV_CSS', False),
     # Use proper locale in FB open graph
-    'og_locale': env_var('OG_LOCALE', 'en_us'),
+    'og_locale': env_var('OG_LOCALE', 'en_US'),
     # Switch to this site
     'alt_site': env_var('ALT_SITE', 'http://www.nomadblue.cl'),
     # Switch to this site link text

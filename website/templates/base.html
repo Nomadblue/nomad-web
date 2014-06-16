@@ -29,13 +29,13 @@
       </style>
     {% endif %}
 
-    <meta property="og:image" content="http://www.nomadblue.com/{% static 'img/nomadblue_logo_fb.png' %}">
     <meta property="og:site_name" content="Nomadblue.com">
     <meta property="fb:admins" content="702028905">
     <meta property="fb:app_id" content="141204579390684">
     <meta property="og:locale" content="{{ og_locale }}">
     {% block open_graph %}
     <meta property="og:type" content="company">
+    <meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
     <meta property="og:title" content="{% trans "Nomadblue - Your CTO on-demand" %}">
     <meta property="og:url" content="http://www.nomadblue.com/">
     <meta property="og:description" content="{% trans "We invest in talent to create disrupting businesses. We have the tools and the expertise for your ideas" %}">
