@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nomadblue\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-16 17:40-0500\n"
-"PO-Revision-Date: 2014-06-16 19:30-0400\n"
+"POT-Creation-Date: 2014-06-16 19:01-0500\n"
+"PO-Revision-Date: 2014-06-16 20:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Nomadblue <info@nomadblue.com>\n"
 "Language: es\n"
@@ -18,18 +18,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.6.5\n"
 
-#: blog/templates/nomadblog/post_detail.html:22
-#: blog/templates/nomadblog/post_list.html:21
-#: contact/templates/contact/contact_form.html:21
-#: website/templates/jobs.html:21
+#: blog/templates/nomadblog/category_list.html:6
+#: blog/templates/nomadblog/category_list.html:24
+#: blog/templates/nomadblog/category_list.html:26
+#: blog/templates/nomadblog/post_detail.html:87
+#: blog/templates/nomadblog/post_list.html:39
+#: blog/templates/nomadblog/post_list_by_category.html:24
+#: website/templates/home.html:24
+msgid "Categories"
+msgstr "Categorías"
+
+#: blog/templates/nomadblog/category_list.html:7
+#: blog/templates/nomadblog/category_list.html:14
+#: blog/templates/nomadblog/post_list.html:8
+#: blog/templates/nomadblog/post_list.html:15
+#: blog/templates/nomadblog/post_list_by_category.html:7
+#: blog/templates/nomadblog/post_list_by_category.html:14
+msgid ""
+"This is the official blog of Nomadblue. We are experts in Python-related "
+"technologies. We are entrepreneurs and geeks like you."
+msgstr ""
+"Este es blog oficial de Nomadblue. Somos expertos en tecnologías "
+"relacionadas con Python. Somos emprendedores y geeks como tú."
+
+#: blog/templates/nomadblog/category_list.html:22
+#: blog/templates/nomadblog/post_detail.html:27
+#: blog/templates/nomadblog/post_list.html:23
+#: blog/templates/nomadblog/post_list_by_category.html:22
+#: contact/templates/contact/contact_form.html:22
+#: website/templates/jobs.html:22
 msgid "Home"
 msgstr "Inicio"
 
-#: blog/templates/nomadblog/post_detail.html:80
+#: blog/templates/nomadblog/category_list.html:40
+msgid "Sorry, no categories found."
+msgstr "Lo sentimos, no se han encontrado categorías"
+
+#: blog/templates/nomadblog/post_detail.html:85
+#: blog/templates/nomadblog/post_list.html:37
 msgid "About this blog"
 msgstr "Acerca de este blog"
 
-#: blog/templates/nomadblog/post_detail.html:81
+#: blog/templates/nomadblog/post_detail.html:86
+#: blog/templates/nomadblog/post_list.html:38
 msgid ""
 "Hello! We are Nomadblue, a group of technology enthusiasts building "
 "applications and first-class web tools. Experienced in entrepreneurship and "
@@ -41,34 +72,21 @@ msgstr ""
 "emprendimiento y metodologías lean, ya hemos ayudado a muchas startups y "
 "empresas a hacer realidad sus proyectos."
 
-#: blog/templates/nomadblog/post_detail.html:82 website/templates/home.html:24
-msgid "Categories"
-msgstr "Categorías"
-
-#: blog/templates/nomadblog/post_list.html:5
+#: blog/templates/nomadblog/post_list.html:7
 msgid "Nomadblue Blog"
 msgstr "Blog de Nomadblue"
 
-#: blog/templates/nomadblog/post_list.html:6
-#: blog/templates/nomadblog/post_list.html:13
-msgid ""
-"This is the official blog of Nomadblue. We are experts in Python-related "
-"technologies. We are entrepreneurs and geeks like you."
-msgstr ""
-"Este es blog oficial de Nomadblue. Somos expertos en tecnologías "
-"relacionadas con Python. Somos emprendedores y geeks como tú."
-
-#: blog/templates/nomadblog/post_list.html:25
+#: blog/templates/nomadblog/post_list_by_category.html:27
 msgid "Latest posts by category"
 msgstr "Últimos posts por categoría"
 
-#: contact/templates/contact/contact_form.html:5
-#: contact/templates/contact/contact_form.html:22
-#: contact/templates/contact/contact_form.html:24
+#: contact/templates/contact/contact_form.html:6
+#: contact/templates/contact/contact_form.html:23
+#: contact/templates/contact/contact_form.html:25
 msgid "Contact us"
 msgstr "Contacta con nosotros"
 
-#: contact/templates/contact/contact_form.html:6
+#: contact/templates/contact/contact_form.html:7
 msgid ""
 "You need Python and Django experts? You want to build the next app big hit? "
 "You dream of launching that idea? Let's talk!"
@@ -76,15 +94,15 @@ msgstr ""
 "Necesitas expertos en Python y Django? Quieres construir el próximo hit en "
 "aplicaciones móviles? Sueñas con lanzar esa idea? Hablemos!"
 
-#: contact/templates/contact/contact_form.html:11
+#: contact/templates/contact/contact_form.html:12
 #: website/templates/base.html:39
 msgid "Nomadblue - Your CTO on-demand"
 msgstr "Nomadblue, tu CTO \"on-demand\""
 
-#: contact/templates/contact/contact_form.html:13
-#: contact/templates/contact/contact_success.html:11
+#: contact/templates/contact/contact_form.html:14
+#: contact/templates/contact/contact_success.html:14
 #: website/templates/base.html:9 website/templates/base.html.py:41
-#: website/templates/jobs.html:13 website/templates/python_jobs.html:11
+#: website/templates/jobs.html:14 website/templates/python_jobs.html:14
 msgid ""
 "We invest in talent to create disrupting businesses. We have the tools and "
 "the expertise for your ideas"
@@ -92,7 +110,7 @@ msgstr ""
 "Invertimos en atento para crear negocios disruptivos. Tenemos las "
 "herramientas y el expertise para tus ideas."
 
-#: contact/templates/contact/contact_form.html:28
+#: contact/templates/contact/contact_form.html:29
 msgid ""
 "Do you have a question? Do you want to pitch us your idea? Maybe you just "
 "want to say hi or leave us a comment? Any case, we'd love to hear from you."
@@ -101,63 +119,63 @@ msgstr ""
 "decir hola o dejarnos algún comentario? De cualquier modo, nos encantaría "
 "escucharte."
 
-#: contact/templates/contact/contact_form.html:32
+#: contact/templates/contact/contact_form.html:33
 msgid "Your name"
 msgstr "Tu nombre"
 
-#: contact/templates/contact/contact_form.html:34
+#: contact/templates/contact/contact_form.html:35
 msgid "Your name here"
 msgstr "Tu nombre aquí"
 
-#: contact/templates/contact/contact_form.html:38
+#: contact/templates/contact/contact_form.html:39
 msgid "Phone (optional)"
 msgstr "Teléfono (opcional)"
 
-#: contact/templates/contact/contact_form.html:40
+#: contact/templates/contact/contact_form.html:41
 msgid "e.g. +56 9 58349448"
 msgstr "Por ejemplo: +56 9 58349448"
 
-#: contact/templates/contact/contact_form.html:44
+#: contact/templates/contact/contact_form.html:45
 msgid "Email address"
 msgstr "Dirección de email"
 
-#: contact/templates/contact/contact_form.html:46
+#: contact/templates/contact/contact_form.html:47
 msgid "your@email.com"
 msgstr "tu@email.com"
 
-#: contact/templates/contact/contact_form.html:50
+#: contact/templates/contact/contact_form.html:51
 msgid "Your message"
 msgstr "Tu mensaje"
 
-#: contact/templates/contact/contact_form.html:57
+#: contact/templates/contact/contact_form.html:58
 msgid "Send"
 msgstr "Enviar"
 
-#: contact/templates/contact/contact_form.html:64
+#: contact/templates/contact/contact_form.html:65
 msgid "Our offices in Santiago, Chile"
 msgstr "Nuestras oficinas en Santiago de Chile"
 
-#: contact/templates/contact/contact_form.html:67
+#: contact/templates/contact/contact_form.html:68
 msgid "Email: info (at) nomadblue.com"
 msgstr "Email: info (at) nomadblue.com"
 
-#: contact/templates/contact/contact_form.html:68
+#: contact/templates/contact/contact_form.html:69
 msgid "Phone: +56 9 58791449"
 msgstr "Teléfono: +56 9 58791449"
 
-#: contact/templates/contact/contact_form.html:69
+#: contact/templates/contact/contact_form.html:70
 msgid "Address: Almirante Zegers 764, Providencia, Santiago (Chile)"
 msgstr "Dirección: Almirante Zegers 764, Providencia, Santiago (Chile)"
 
-#: contact/templates/contact/contact_success.html:3
+#: contact/templates/contact/contact_success.html:6
 msgid "Thank you"
 msgstr "Muchas gracias"
 
-#: contact/templates/contact/contact_success.html:4
+#: contact/templates/contact/contact_success.html:7
 msgid "Thanks for contacting us!"
 msgstr "Gracias por contactar con nosotros!"
 
-#: contact/templates/contact/contact_success.html:9
+#: contact/templates/contact/contact_success.html:12
 msgid "Nomadblue - Web development for startups and smart companies"
 msgstr "Nomadblue - Desarrollo web para startups y empresas inteligentes"
 
@@ -286,16 +304,16 @@ msgstr "Últimos artículos de blog"
 msgid "(see all)"
 msgstr "(ver todos)"
 
-#: website/templates/jobs.html:5
+#: website/templates/jobs.html:6
 msgid "Jobs and vacancies"
 msgstr "trabajos y vacantes"
 
-#: website/templates/jobs.html:6
+#: website/templates/jobs.html:7
 msgid "Jobs and vacancies at Nomadblue. Work with us, we are hiring!"
 msgstr ""
 "Trabajos y vacantes en Nomadblue. Trabaja con nosotros, estamos contratando!"
 
-#: website/templates/jobs.html:11
+#: website/templates/jobs.html:12
 msgid ""
 "Jobs and vacancies at Nomadblue - Web development for startups and smart "
 "companies"
@@ -303,33 +321,33 @@ msgstr ""
 "Puestos de trabajo y plazas vacantes en Nomadblue - Desarrollo web para "
 "startups y empresas inteligentes"
 
-#: website/templates/jobs.html:22
+#: website/templates/jobs.html:23
 msgid "Jobs"
 msgstr "Trabajos"
 
-#: website/templates/jobs.html:24
+#: website/templates/jobs.html:25
 msgid "Work with us, we are hiring!"
 msgstr "Trabaja con nosotros, estamos contratando!"
 
-#: website/templates/jobs.html:28
+#: website/templates/jobs.html:29
 msgid "Currently these are the jobs we are offering:"
 msgstr "Actualmente estos son los trabajos que estamos ofreciendo:"
 
-#: website/templates/jobs.html:30
+#: website/templates/jobs.html:31
 msgid "Python/Django web developers"
 msgstr "Desarrolladores web Python/Django"
 
-#: website/templates/python_jobs.html:3
+#: website/templates/python_jobs.html:6
 msgid "Python Jobs"
 msgstr "Trabajos en Python"
 
-#: website/templates/python_jobs.html:4
+#: website/templates/python_jobs.html:7
 msgid "Python jobs and vacancies at Nomadblue. Work with us, we are hiring!"
 msgstr ""
 "Trabajos y vacantes de Python en Nomadblue. Trabaja con nosotros, estamos "
 "contratando!"
 
-#: website/templates/python_jobs.html:9
+#: website/templates/python_jobs.html:12
 msgid ""
 "Python jobs and vacancies at Nomadblue - Web development for startups and "
 "smart companies"
@@ -345,19 +363,19 @@ msgstr ""
 "Invertimos en atento para crear negocios disruptivos.<br>Tenemos las "
 "herramientas y el expertise para tus ideas."
 
-#: website/templates/website/includes/header.html:27
+#: website/templates/website/includes/header.html:28
 msgid "HOME"
 msgstr "INICIO"
 
-#: website/templates/website/includes/header.html:28
+#: website/templates/website/includes/header.html:29
 msgid "BLOG"
 msgstr "BLOG"
 
-#: website/templates/website/includes/header.html:29
+#: website/templates/website/includes/header.html:30
 msgid "CONTACT"
 msgstr "CONTACTO"
 
-#: website/templates/website/includes/header.html:30
+#: website/templates/website/includes/header.html:31
 msgid "JOBS"
 msgstr "EMPLEOS"
 
