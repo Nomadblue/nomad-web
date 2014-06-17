@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% load staticfiles %}
 {% load i18n %}
 {% load nomadblog_tags %}
 {% load imagekit %}
@@ -9,7 +10,11 @@
 
 {% block open_graph %}
 <meta property="og:type" content="article">
-<meta property="og:image" content="{{ object.pic.url }}">
+{% if object.image %}
+  <meta property="og:image" content="{{ object.pic.url }}">
+{% else %}
+  <meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
+{% endif %}
 <meta property="og:title" content="{{ object.title }}">
 <meta property="og:url" content="{{ site_url }}{{ object.get_absolute_url }}">
 <meta property="og:description" content="{{ object.summary|striptags|truncatechars:300 }}">
@@ -20,7 +25,7 @@
   <div class="title-lead">
     <ul class="list-unstyled list-inline">
       <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
-      <li><a href="{% url 'post_list' %}">Nomadblue blog</a></li>
+      <li><a href="{% url 'post_list' %}">{{ blog.title }}</a></li>
       <li>{{ object.title }}</li>
     </ul>
     <h1 class="main-h1">{{ object.title }}</h1>

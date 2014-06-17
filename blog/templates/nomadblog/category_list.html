@@ -1,34 +1,42 @@
 {% extends 'base.html' %}
 
-{% block html_title %}Categories | Nomadblue Blog{% endblock %}
-{% block html_desc %}This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.{% endblock %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block html_title %}{% trans "Categories" %} | {{ blog.title }}{% endblock %}
+{% block html_desc %}{% trans "This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you." %}{% endblock %}
 
 {% block open_graph %}
 <meta property="og:type" content="website">
 <meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
 <meta property="og:title" content="Nomadblue blog - Python, Django, web development">
 <meta property="og:url" content="{{ site_url }}{% url 'post_list' %}">
-<meta property="og:description" content="This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you.">
+<meta property="og:description" content="{% trans "This is the official blog of Nomadblue. We are experts in Python-related technologies. We are entrepreneurs and geeks like you." %}">
 {% endblock %}
 
 {% block content %}
 
 <div class="container">
   <div class="title-lead">
-    <h1>{{ blog.title }} - Categories</h1>
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li><a href="{% url 'post_list' %}">{{ blog.title }}</a></li>
+      <li>{% trans "Categories" %}</li>
+    </ul>
+    <h1 class="main-h1">{{ blog.title }} - {% trans "Categories" %}</h1>
   </div>
 </div>
 <div class="container">
-<ul>
-  {% for cat in object_list %}
+<ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
+  {% for category in object_list %}
     {% comment %}
       If the blog belongs to countries, it is not possible to resolve the url
       from get_absolute_url (it could be /es/blog-slug/ or /it/blog-slug/).
       Therefore, the href attr from the <a> must be filled by you.
     {% endcomment %}
-    <li><p><a href="#">{{ cat.name }}</a></p></li>
+    <li><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ category.name|capfirst }}</a></li>
   {% empty %}
-    <li>Sorry, no categories found.</li>
+    <li>{% trans "Sorry, no categories found." %}</li>
   {% endfor %}
 </ul>
 </div>
