@@ -15,8 +15,8 @@ def env_var(key, default=None):
 
 SECRET_KEY = env_var('SECRET_KEY', 'your$%&/defaultsecretkeygoesheremyfriend!')
 
-DEBUG = env_var('DEBUG', True)
-TEMPLATE_DEBUG = True
+DEBUG = env_var('DEBUG', False)
+TEMPLATE_DEBUG = DEBUG
 INTERNAL_IPS = ('127.0.0.1',)
 
 ALLOWED_HOSTS = env_var('ALLOWED_HOSTS', '*').split(',')
@@ -171,6 +171,8 @@ TEMPLATE_EXTRA_CONTEXT = {
     'alt_site': env_var('ALT_SITE', 'http://www.nomadblue.cl'),
     # Switch to this site link text
     'alt_site_text': env_var('ALT_SITE_TEXT', 'Versión español'),
+    # Show google analytics tracking code for proper site
+    'ga_template_path': env_var('GA_TEMPLATE_PATH', "website/includes/ga_nomadblue_com.html"),
 }
 
 try:
