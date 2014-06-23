@@ -1,37 +1,23 @@
 {% load i18n %}
 
 <footer>
-  <div class="container-fluid bottom">
-    <div class="row">
-      <div class="col-xs-2 col-sm-1 col-md-2">
-        <h5 class="pull-left"><a href="#">Nomadblue</a></h5>
-      </div>
-      <div class="col-xs-10 col-sm-7 col-md-7">
-        <p class="claim">{% trans "We invest in talent to create disrupting businesses.<br>We have the tools and the expertise for your ideas." %}</p>  
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <ul class="list-unstyled list-inline pull-right">
-          <li><a href="https://twitter.com/nomadblue" class="ico-social twitter">Twitter</a></li>
-          <li><a href="https://www.facebook.com/nomadblueltd" class="ico-social facebook">Facebook</a></li>
-          <li><a href="{% url 'latest_entries' %}" class="ico-social rss">RSS</a></li>
-        </ul>
+  <div class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-1 col-md-2">
+          <h5 class="pull-left"><a href="#">Nomadblue</a></h5>
+        </div>
+        <div class="col-xs-10 col-sm-7 col-md-7">
+          <p class="claim">{% trans "We invest in talent to create disrupting businesses.<br>We have the tools and the expertise for your ideas." %}</p>  
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <ul class="list-unstyled list-inline pull-right">
+            <li><a href="https://twitter.com/nomadblue" class="ico-social twitter">Twitter</a></li>
+            <li><a href="https://www.facebook.com/nomadblueltd" class="ico-social facebook">Facebook</a></li>
+            <li><a href="{% url 'latest_entries' %}" class="ico-social rss">RSS</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </footer>
-
-{% comment %}
-<footer>
-  <div class="bottom clearfix">
-    <div class="container">
-      <h5 class="pull-left"><a href="#">Nomadblue</a></h5>
-      <p class="claim pull-left">{% trans "We invest in talent to create disrupting businesses.<br>We have the tools and the expertise for your ideas." %}</p>  
-      <ul class="list-unstyled list-inline pull-right">
-        <li><a href="https://twitter.com/nomadblue" class="ico-social twitter">Twitter</a></li>
-        <li><a href="https://www.facebook.com/nomadblueltd" class="ico-social facebook">Facebook</a></li>
-        <li><a href="{% url 'latest_entries' %}" class="ico-social rss">RSS</a></li>
-      </ul>
-    </div>  
-  </div>
-</footer>
-{% endcomment %}
