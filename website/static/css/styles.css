@@ -6082,6 +6082,19 @@ body {
 .navbar {
   background-color: #d0e3e8;
   border: 0;
+  min-height: 70px;
+}
+.navbar .container {
+  padding-left: 30px;
+}
+.navbar-toggle {
+  margin-top: 19px;
+  background-color: #9966ff;
+  height: 31px;
+  padding: 5px 10px 5px 10px;
+}
+.navbar-collapse {
+  max-height: 350px !important;
 }
 .navbar-nav li.active {
   background-color: #9bdbe8;
@@ -6109,48 +6122,36 @@ body {
   font-size: 1em;
   color: #ff7f66;
 }
-#home-lead {
-  font-family: Dosis, Helvetica, Arial, sans-serif;
+.cover {
+  width: 99%;
   height: 100vh;
   background: url(../img/santiago_bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 70px 15px 20px 15px;
-  position: relative;
-}
-.home-lead-in-text {
-  position: absolute;
-  width: 100%;
-  padding: 0 300px;
-  top: 70px;
-}
-#home-lead h1 {
-  font-size: 65px;
-  color: #9fdbea;
-  font-weight: 600;
-}
-#home-lead h3 {
-  font-size: 30px;
-  color: #fff;
-}
-.home-lead-parent {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.home-lead-child {
   display: table;
-  min-height: 560px;
+  font-family: Dosis, Helvetica, Arial, sans-serif;
 }
-.home-lead-in {
+.middle {
   display: table-cell;
   vertical-align: middle;
+}
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   text-align: center;
+}
+.inner h1 {
+  font-size: 5vw;
+  color: #9fdbea;
+  text-shadow: 2px 2px #092E20;
+  font-weight: bold;
+}
+.inner h3 {
+  font-size: 2em;
+  color: #fff;
 }
 .see-more {
   position: absolute;
@@ -6195,46 +6196,42 @@ body {
   padding: 0;
 }
 .about-us-quote div {
-  padding: 20px 70px;
+  padding: 10px 20px;
   background-color: #ffffff;
   opacity: 0.8;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */
-}
-.about-us-quote div p {
-  font-size: 35px;
+  text-align: justify;
 }
 a.thumbnail {
   border: 0;
 }
 .carousel-control {
-  /* padding-top:10%; */
   width: 5%;
   position: absolute;
   top: 40%;
-  /* left: 15px; */
   width: 40px;
   height: 40px;
-  /* margin-top: -20px; */
   font-size: 28px;
   font-weight: 100;
   line-height: 33px;
   color: #9fdbea;
-  /* text-align: center; */
   background: #222222;
   border: 3px solid #9fdbea;
-  /* -webkit-border-radius: 23px; */
-  /* -moz-border-radius: 23px; */
   border-radius: 23px;
-  /* opacity: 0.5; */
 }
 .carousel-control.left {
   background-image: none;
-  left: -40px;
+  left: -25px;
 }
 .carousel-control.right {
   background-image: none;
-  right: -40px;
+  right: -25px;
+}
+@media screen and (max: 767px) {
+  .icon {
+    display: none;
+  }
 }
 time.icon {
   font-size: 0.6em;

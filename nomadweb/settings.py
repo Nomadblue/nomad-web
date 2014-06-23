@@ -170,7 +170,7 @@ TEMPLATE_EXTRA_CONTEXT = {
     # Switch to this site
     'alt_site': env_var('ALT_SITE', 'http://www.nomadblue.cl'),
     # Switch to this site link text
-    'alt_site_text': env_var('ALT_SITE_TEXT', 'Versión español'),
+    'alt_site_text': env_var('ALT_SITE_TEXT', 'Español'),
     # Show google analytics tracking code for proper site
     'ga_template_path': env_var('GA_TEMPLATE_PATH', "website/includes/ga_nomadblue_com.html"),
 }
