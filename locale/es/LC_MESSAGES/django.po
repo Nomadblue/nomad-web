@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nomadblue\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-16 19:01-0500\n"
-"PO-Revision-Date: 2014-06-16 20:01-0400\n"
+"POT-Creation-Date: 2014-06-26 17:03-0400\n"
+"PO-Revision-Date: 2014-06-26 17:04-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Nomadblue <info@nomadblue.com>\n"
 "Language: es\n"
@@ -292,6 +292,22 @@ msgstr "contenido"
 msgid "featured countries"
 msgstr "países destacados"
 
+#: website/feeds.py:16 website/feeds.py:31 website/feeds.py:46
+msgid "Nomadblue - We are your CTO on-demand"
+msgstr "Nomadblue - Somos tu CTO \"on-demand\""
+
+#: website/feeds.py:18
+msgid "Nomadblue: Latest entries"
+msgstr "Nomadblue: Ultimas entradas"
+
+#: website/feeds.py:33
+msgid "Nomadblue: Latest entries in Django category"
+msgstr "Nomadblue: Últimas entradas en la categoría Django"
+
+#: website/feeds.py:48
+msgid "Nomadblue: Latest entries in Python category"
+msgstr "Nomadblue: Últimas entradas en la categoría Python"
+
 #: website/templates/base.html:8
 msgid "Your CTO on-demand"
 msgstr "Tu CTO \"on-demand\""
@@ -355,7 +371,7 @@ msgstr ""
 "Trabajos y plazas vacantes para Python en Nomadblue - Desarrollo web para "
 "startups y empresas inteligentes"
 
-#: website/templates/website/includes/footer.html:7
+#: website/templates/website/includes/footer.html:11
 msgid ""
 "We invest in talent to create disrupting businesses.<br>We have the tools "
 "and the expertise for your ideas."
@@ -363,27 +379,27 @@ msgstr ""
 "Invertimos en atento para crear negocios disruptivos.<br>Tenemos las "
 "herramientas y el expertise para tus ideas."
 
-#: website/templates/website/includes/header.html:28
+#: website/templates/website/includes/header.html:29
 msgid "HOME"
 msgstr "INICIO"
 
-#: website/templates/website/includes/header.html:29
+#: website/templates/website/includes/header.html:30
 msgid "BLOG"
 msgstr "BLOG"
 
-#: website/templates/website/includes/header.html:30
+#: website/templates/website/includes/header.html:31
 msgid "CONTACT"
 msgstr "CONTACTO"
 
-#: website/templates/website/includes/header.html:31
+#: website/templates/website/includes/header.html:32
 msgid "JOBS"
 msgstr "EMPLEOS"
 
-#: website/templates/website/includes/home_lead.html:8
+#: website/templates/website/includes/home_lead.html:6
 msgid "We are Nomadblue, your CTO on-demand"
 msgstr "Somos Nomadblue, tu CTO \"on-demand\""
 
-#: website/templates/website/includes/home_lead.html:9
+#: website/templates/website/includes/home_lead.html:7
 msgid ""
 "We help launch disruptive companies by bringing our operational expertise "
 "right into their core businesses"
@@ -395,7 +411,7 @@ msgstr ""
 msgid "Scroll down"
 msgstr "Scroll abajo"
 
-#: website/templates/website/includes/home_quote.html:5
+#: website/templates/website/includes/home_quote.html:6
 msgid ""
 "We are a group of technology enthusiasts building applications and first-"
 "class web tools. Experienced in entrepreneurship and lean methodologies, we "
