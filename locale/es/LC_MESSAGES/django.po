@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nomadblue\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-26 17:03-0400\n"
-"PO-Revision-Date: 2014-06-26 17:04-0400\n"
+"POT-Creation-Date: 2014-07-04 12:14-0400\n"
+"PO-Revision-Date: 2014-07-04 12:17-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Nomadblue <info@nomadblue.com>\n"
 "Language: es\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: blog/templates/nomadblog/post_detail.html:87
 #: blog/templates/nomadblog/post_list.html:39
 #: blog/templates/nomadblog/post_list_by_category.html:24
-#: website/templates/home.html:24
+#: website/templates/home.html:26
 msgid "Categories"
 msgstr "Categorías"
 
@@ -107,7 +107,7 @@ msgid ""
 "We invest in talent to create disrupting businesses. We have the tools and "
 "the expertise for your ideas"
 msgstr ""
-"Invertimos en atento para crear negocios disruptivos. Tenemos las "
+"Invertimos en talento para crear negocios disyuntivos. Tenemos las "
 "herramientas y el expertise para tus ideas."
 
 #: contact/templates/contact/contact_form.html:29
@@ -312,11 +312,11 @@ msgstr "Nomadblue: Últimas entradas en la categoría Python"
 msgid "Your CTO on-demand"
 msgstr "Tu CTO \"on-demand\""
 
-#: website/templates/home.html:18
+#: website/templates/home.html:20
 msgid "Latest blog posts"
 msgstr "Últimos artículos de blog"
 
-#: website/templates/home.html:18
+#: website/templates/home.html:20
 msgid "(see all)"
 msgstr "(ver todos)"
 
@@ -401,11 +401,11 @@ msgstr "Somos Nomadblue, tu CTO \"on-demand\""
 
 #: website/templates/website/includes/home_lead.html:7
 msgid ""
-"We help launch disruptive companies by bringing our operational expertise "
-"right into their core businesses"
+"Startup acceleration. We help launch disruptive companies by bringing our "
+"operational expertise right into their core businesses"
 msgstr ""
-"Ayudamos a lanzar empresas innovadoras introduciendo nuestro expertise en el "
-"corazón mismo de sus negocios"
+"Aceleradora de startups. Ayudamos a lanzar empresas innovadoras "
+"introduciendo nuestro expertise en el corazón mismo de sus negocios"
 
 #: website/templates/website/includes/home_lead.html:12
 msgid "Scroll down"
@@ -424,8 +424,8 @@ msgstr ""
 "realidad sus proyectos."
 
 #: website/templates/website/includes/home_showcase.html:6
-msgid "Our latest works"
-msgstr "Nuestros últimos trabajos"
+msgid "Latest startups and projects"
+msgstr "Últimas startups y proyectos"
 
 #: website/templates/website/includes/home_showcase.html:14
 msgid "Rnovo - Online Trademark Registration"
@@ -478,19 +478,20 @@ msgstr "Libertad para innovar"
 
 #: website/templates/website/includes/home_triptic.html:8
 msgid ""
-"Imagine you could wrap up entrepreneurship visionaries, awesome code ninjas, "
-"UI/UX design gurus and top-notch tech evangelists into <b>a single super-"
-"entity</b> and incorporate it to your business or project. You are liberated "
-"from the difficulties of the building process, so suddenly all your "
-"constraints disappear allowing you to focus on what really matters:"
-"<br><b>your product, your clients, your mission</b>."
+"Imagine you could bring startup mentors and advisors, entrepreneurship "
+"visionaries, awesome code ninjas, UI/UX design gurus and top-notch tech "
+"evangelists into <b>a single super-entity</b> and incorporate it to your "
+"business or project. You are liberated from the difficulties of the building "
+"process, so suddenly all your constraints disappear allowing you to focus on "
+"what really matters:<br><b>your product, your clients, your mission</b>."
 msgstr ""
-"Imagina que pudieras reunir a visionarios emprendedores, asombrosos code "
-"ninjas, gurus del diseño y la usabilidad y evangelizadores de la tecnología, "
-"todos en una super-entidad para incorporarlos en tu negocio o proyecto. "
-"Quedas pues liberado de las dificultades del proceso de  desarrollo, y de "
-"repente todas tus ataduras desaparecen permitiéndote enfocarte en lo que "
-"realmente importa: <br><b>tu producto, tus clientes, tu misión</b>."
+"Imagina que pudieras reunir a mentores y advisors para startups, visionarios "
+"emprendedores, asombrosos code ninjas, gurus del diseño y la usabilidad y "
+"evangelizadores de la tecnología, todos en una super-entidad para "
+"incorporarlos en tu negocio o proyecto. Quedas pues liberado de las "
+"dificultades del proceso de  desarrollo, y de repente todas tus ataduras "
+"desaparecen permitiéndote enfocarte en lo que realmente importa: <br><b>tu "
+"producto, tus clientes, tu misión</b>."
 
 #: website/templates/website/includes/home_triptic.html:12
 msgid "Boostrap your growth"
@@ -498,14 +499,16 @@ msgstr "Optimiza tu crecimiento"
 
 #: website/templates/website/includes/home_triptic.html:13
 msgid ""
-"We propose you to build <b>MVPs (minimal viable products)</b> and "
-"incrementally turn them into full-featured products. Time, resources, goals "
-"and your economy they all align together to streamline the development "
-"progress; together we set the pace to <b>organic growth</b> and the tools to "
-"<b>business wisdom</b>."
+"We propose you to walk together in your way to creating your product, "
+"building <b>MVPs (minimal viable products)</b> first and incrementally turn "
+"them into full-featured products. Time, resources, goals and your economy "
+"they all align together to streamline the development progress; together we "
+"set the pace to <b>organic growth</b> and the tools to <b>business wisdom</"
+"b>."
 msgstr ""
-"Te proponemos construir <b>MVP (en inglés \"productos mínimos viables\")</b> "
-"y progresivamente convertirlos en productos completos. Tiempo, recursos, "
+"Te proponemos caminar juntos en la creación de tu producto o servicio, "
+"construyendo <b>MVP (en inglés \"productos mínimos viables\")</b> y "
+"progresivamente convertirlos en productos completos. Tiempo, recursos, "
 "objetivos y presupuesto se alinean para optimizar el avance del desarrollo; "
 "juntos establecemos el ritmo para un <b>crecimiento orgánico</b> y la "
 "herramientas para la <b>inteligencia de negocio</b>."
@@ -528,3 +531,6 @@ msgstr ""
 "<b>cadenas</b> para tus ideas</b>! Déjanos guiarte a ti y a tu equipo a "
 "través de los diferentes estadios, de manera ágil y aplicando una rutina "
 "inversiva para mantenerte consciente y colaborativo."
+
+#~ msgid "Our latest works"
+#~ msgstr "Nuestros últimos trabajos"
