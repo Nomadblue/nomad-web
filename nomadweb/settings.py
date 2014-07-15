@@ -177,6 +177,7 @@ TEMPLATE_EXTRA_CONTEXT = {
 
 PURGE_IMAGES_FROM_MODELS = (
     ('blog.NomadPost', 'image'),
+    ('nomadblog.BlogUser', 'image'),
 )
 
 try:

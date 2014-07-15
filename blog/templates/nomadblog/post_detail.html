@@ -67,9 +67,11 @@
       <div class="post-author clearfix">
         {% if use_holder_js %}
           <img data-src="holder.js/80x80" class="img-circle">
-        {% else %}
+        {% elif object.image %}
           {% generateimage 'nomadblog:bloguser' source=object.bloguser.image as bloguserimg %}
           <img src="{{ bloguserimg.url }}" class="img-circle">
+        {% else %}
+          <img src="http://placehold.it/80x80.png" class="img-circle">
         {% endif %}
         <p class="author"><a href="{{ object.bloguser.website_url|default:'/blog/' }}">{{ object.bloguser.name }}</a></p>
         <p>{{ object.bloguser.bio }}</p>
