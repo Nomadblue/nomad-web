@@ -1,0 +1,20 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load nomadblog_tags %}
+
+<div class="container">
+  <div class="row">
+    <p style="text-align:center; font-size:35px; font-weight:300">{% trans "Articles & News" %}</p>
+    <div class="col-md-10 col-md-offset-1">
+      {% for post in posts %}
+        {% include "blog/bits/post_list_item.html" with object=post %}
+        {% if not forloop.last %}
+          <hr>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+    <div style="text-align: center; font-weight: 300">
+      <a class="btn btn-primary" href="{% url 'post_list' %}">Read our blog here</a>
+    </div>
+</div>

@@ -22,6 +22,7 @@ class NomadPost(Post):
 
     # Imagekit specs
     pic = ImageSpecField([Adjust(contrast=1.2, sharpness=1.1), ResizeToFit(720)], source='image', format='PNG', options={'quality': 90})
+    listed_pic = ImageSpecField([Adjust(contrast=1.2, sharpness=1.1), ResizeToFill(720, 300)], source='image', format='PNG', options={'quality': 90})
 
 
 # This code here to be used alogn with the {% generateimage %} imagekit template tag

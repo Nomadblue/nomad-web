@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nomadblue\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-04 12:14-0400\n"
-"PO-Revision-Date: 2014-07-04 12:17-0400\n"
+"POT-Creation-Date: 2014-07-15 11:30-0500\n"
+"PO-Revision-Date: 2014-07-15 12:31-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Nomadblue <info@nomadblue.com>\n"
 "Language: es\n"
@@ -24,7 +24,6 @@ msgstr ""
 #: blog/templates/nomadblog/post_detail.html:87
 #: blog/templates/nomadblog/post_list.html:39
 #: blog/templates/nomadblog/post_list_by_category.html:24
-#: website/templates/home.html:26
 msgid "Categories"
 msgstr "Categorías"
 
@@ -312,14 +311,6 @@ msgstr "Nomadblue: Últimas entradas en la categoría Python"
 msgid "Your CTO on-demand"
 msgstr "Tu CTO \"on-demand\""
 
-#: website/templates/home.html:20
-msgid "Latest blog posts"
-msgstr "Últimos artículos de blog"
-
-#: website/templates/home.html:20
-msgid "(see all)"
-msgstr "(ver todos)"
-
 #: website/templates/jobs.html:6
 msgid "Jobs and vacancies"
 msgstr "trabajos y vacantes"
@@ -395,11 +386,15 @@ msgstr "CONTACTO"
 msgid "JOBS"
 msgstr "EMPLEOS"
 
-#: website/templates/website/includes/home_lead.html:6
+#: website/templates/website/includes/home_blog.html:7
+msgid "Articles & News"
+msgstr "Artículos y noticias"
+
+#: website/templates/website/includes/home_lead.html:5
 msgid "We are Nomadblue, your CTO on-demand"
 msgstr "Somos Nomadblue, tu CTO \"on-demand\""
 
-#: website/templates/website/includes/home_lead.html:7
+#: website/templates/website/includes/home_lead.html:6
 msgid ""
 "Startup acceleration. We help launch disruptive companies by bringing our "
 "operational expertise right into their core businesses"
@@ -407,7 +402,7 @@ msgstr ""
 "Aceleradora de startups. Ayudamos a lanzar empresas innovadoras "
 "introduciendo nuestro expertise en el corazón mismo de sus negocios"
 
-#: website/templates/website/includes/home_lead.html:12
+#: website/templates/website/includes/home_lead.html:9
 msgid "Scroll down"
 msgstr "Scroll abajo"
 
@@ -424,59 +419,18 @@ msgstr ""
 "realidad sus proyectos."
 
 #: website/templates/website/includes/home_showcase.html:6
-msgid "Latest startups and projects"
-msgstr "Últimas startups y proyectos"
+msgid "Startups & Projects"
+msgstr "Startups y Proyectos"
 
-#: website/templates/website/includes/home_showcase.html:14
-msgid "Rnovo - Online Trademark Registration"
-msgstr "Rnovo - Registro de marcas online"
+#: website/templates/website/includes/home_triptic.html:5
+msgid "What we do"
+msgstr "Qué hacemos"
 
-#: website/templates/website/includes/home_showcase.html:15
-msgid ""
-"Register your trademark in an easy, comprehensible and secure way, at an "
-"unbeatable price"
-msgstr ""
-"Registra tu marca de manera sencilla, comprensible y segura, a un precio "
-"imbatible"
-
-#: website/templates/website/includes/home_showcase.html:31
-msgid "Ahorramos - Financial recommendations"
-msgstr "Ahorramos - Recomendador financiero"
-
-#: website/templates/website/includes/home_showcase.html:32
-msgid ""
-"Let these guys guide you through the process of finding out the best credit "
-"card, insurance, mortgage, etc"
-msgstr ""
-"Deja en manos de estos tipos el proceso de encontrar la mejor tarjeta de "
-"crédito, seguro, hipoteca, etc"
-
-#: website/templates/website/includes/home_showcase.html:42
-msgid "Blinkme app"
-msgstr "Blinkme app"
-
-#: website/templates/website/includes/home_showcase.html:43
-msgid ""
-"Send pictures to your friends which can be seen only for a few seconds, "
-"before they disappear forever without a trace"
-msgstr ""
-"Envía a tus amigos fotografías que pueden ser vistas sólo por unos segundos, "
-"antes de que desaparezcan sin dejar rastro"
-
-#: website/templates/website/includes/home_showcase.html:49
-msgid "Activism - We can change the world"
-msgstr "Activism - Podemos cambiar el mundo"
-
-#: website/templates/website/includes/home_showcase.html:50
-msgid ""
-"Activism is the first and foremost location for hosting your online petition"
-msgstr "Activism es el mejor sitio para publicar tus peticiones online"
-
-#: website/templates/website/includes/home_triptic.html:7
+#: website/templates/website/includes/home_triptic.html:8
 msgid "Freedom to innovate"
 msgstr "Libertad para innovar"
 
-#: website/templates/website/includes/home_triptic.html:8
+#: website/templates/website/includes/home_triptic.html:9
 msgid ""
 "Imagine you could bring startup mentors and advisors, entrepreneurship "
 "visionaries, awesome code ninjas, UI/UX design gurus and top-notch tech "
@@ -493,11 +447,11 @@ msgstr ""
 "desaparecen permitiéndote enfocarte en lo que realmente importa: <br><b>tu "
 "producto, tus clientes, tu misión</b>."
 
-#: website/templates/website/includes/home_triptic.html:12
+#: website/templates/website/includes/home_triptic.html:13
 msgid "Boostrap your growth"
 msgstr "Optimiza tu crecimiento"
 
-#: website/templates/website/includes/home_triptic.html:13
+#: website/templates/website/includes/home_triptic.html:14
 msgid ""
 "We propose you to walk together in your way to creating your product, "
 "building <b>MVPs (minimal viable products)</b> first and incrementally turn "
@@ -513,11 +467,11 @@ msgstr ""
 "juntos establecemos el ritmo para un <b>crecimiento orgánico</b> y la "
 "herramientas para la <b>inteligencia de negocio</b>."
 
-#: website/templates/website/includes/home_triptic.html:17
+#: website/templates/website/includes/home_triptic.html:18
 msgid "Startups == #noestimates"
 msgstr "Startups == #noestimates"
 
-#: website/templates/website/includes/home_triptic.html:18
+#: website/templates/website/includes/home_triptic.html:19
 msgid ""
 "Innovative projects need a flexible environment to build prototypes and "
 "validate their business models quickly. Get rid of <b>fixed estimates and "
@@ -531,6 +485,50 @@ msgstr ""
 "<b>cadenas</b> para tus ideas</b>! Déjanos guiarte a ti y a tu equipo a "
 "través de los diferentes estadios, de manera ágil y aplicando una rutina "
 "inversiva para mantenerte consciente y colaborativo."
+
+#~ msgid "Latest blog posts"
+#~ msgstr "Últimos artículos de blog"
+
+#~ msgid "(see all)"
+#~ msgstr "(ver todos)"
+
+#~ msgid "Rnovo - Online Trademark Registration"
+#~ msgstr "Rnovo - Registro de marcas online"
+
+#~ msgid ""
+#~ "Register your trademark in an easy, comprehensible and secure way, at an "
+#~ "unbeatable price"
+#~ msgstr ""
+#~ "Registra tu marca de manera sencilla, comprensible y segura, a un precio "
+#~ "imbatible"
+
+#~ msgid "Ahorramos - Financial recommendations"
+#~ msgstr "Ahorramos - Recomendador financiero"
+
+#~ msgid ""
+#~ "Let these guys guide you through the process of finding out the best "
+#~ "credit card, insurance, mortgage, etc"
+#~ msgstr ""
+#~ "Deja en manos de estos tipos el proceso de encontrar la mejor tarjeta de "
+#~ "crédito, seguro, hipoteca, etc"
+
+#~ msgid "Blinkme app"
+#~ msgstr "Blinkme app"
+
+#~ msgid ""
+#~ "Send pictures to your friends which can be seen only for a few seconds, "
+#~ "before they disappear forever without a trace"
+#~ msgstr ""
+#~ "Envía a tus amigos fotografías que pueden ser vistas sólo por unos "
+#~ "segundos, antes de que desaparezcan sin dejar rastro"
+
+#~ msgid "Activism - We can change the world"
+#~ msgstr "Activism - Podemos cambiar el mundo"
+
+#~ msgid ""
+#~ "Activism is the first and foremost location for hosting your online "
+#~ "petition"
+#~ msgstr "Activism es el mejor sitio para publicar tus peticiones online"
 
 #~ msgid "Our latest works"
 #~ msgstr "Nuestros últimos trabajos"

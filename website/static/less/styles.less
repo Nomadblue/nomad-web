@@ -42,8 +42,8 @@
 
 @link-color: @primaryDark;
 
-@btn-primary-color: #000;
-@btn-primary-bg: @secondaryCornerLight;
+@btn-primary-color: #fff;
+@btn-primary-bg: @secondaryCornerDark;
 @btn-primary-border: @secondaryCornerLight;
 
 // --------------------------------
@@ -52,6 +52,7 @@
 
 .btn-primary {
     font-size: 1.2em;
+    text-transform: uppercase;
 }
 
 // --------
@@ -60,6 +61,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #F6F6EF;
 }
 
 .navbar {
@@ -110,7 +112,7 @@ body {
 .cover {
     // width: 99%;
     height:100vh;
-    background: url(../img/santiago_bg.jpg) no-repeat center center fixed;
+    background: url(../img/santiago_bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -133,26 +135,37 @@ body {
     width: 50%;
     text-align: center;
 }
-.inner h1 {
-    font-size: 5vw;
-    color: #9fdbea;
-    text-shadow: 2px 2px #092E20;
-    font-weight: bold;
+.home-lead {
+    text-align: center;
+    background-color: #F6F6EF;
+    padding-top: 90px;
+    padding-bottom: 20px;
 }
-.inner h3 {
-    font-size: 2em;
-    color: #fff;
+.home-lead .lead-div {
+    width: 60%;
+    margin:  0 auto;
+}
+.home-lead .lead-div h1 {
+    font-size: 5.9vw;
+    text-decoration: underline;
+    color: #eee;
+    // text-shadow: 2px 2px #092E20;
+    // font-weight: bold;
+}
+.home-lead .lead-div h2 {
+    font-size: 3.3vw;
+    color: #eee;
 }
 .see-more {
     position: absolute;
     bottom: 0;
     text-align: center;
+    margin-bottom: 20px;
     width: 100%;
-    margin-bottom: 50px;
 }
 .home-triptic {
     text-align: center;
-    padding-top: 90px;
+    padding-top: 60px;
     margin-bottom: 30px;
 }
 .home-triptic h2 {

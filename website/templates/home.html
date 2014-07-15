@@ -2,35 +2,11 @@
 
 {% load i18n %}
 {% load staticfiles %}
-{% load nomadblog_tags %}
 
 {% block content %}
-
-{% include "website/includes/home_lead.html" %}
-{% include "website/includes/home_triptic.html" %}
-{% comment %}
-{% include "website/includes/home_quote.html" %}
-{% endcomment %}
-{% include "website/includes/home_showcase.html" %}
-
-<hr>
-
-<div class="container">
-  <div class="col-md-9">
-    <h2 style="margin-bottom:30px">{% trans "Latest blog posts" %} <a href="{% url 'post_list' %}">{% trans "(see all)" %}</a></h2>
-    {% for post in posts %}
-      {% include "blog/bits/post_list_item.html" with object=post %}
-    {% endfor %}
-  </div>
-  <div class="col-md-3">
-    <h3>{% trans "Categories" %}</h3>
-    <ul class="sidebar-category-ul" style="list-style-type:none; padding-left: 0">
-      {% get_blog_categories as categories %}
-      {% for category in categories %}
-      <li><a class="category-lnk" href="{% url 'post_list_by_category' category.slug %}">{{ category.name|capfirst }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-
+  {% include "website/includes/home_lead.html" %}
+  {% include "website/includes/home_triptic.html" %}
+  {% include "website/includes/home_showcase.html" %}
+  <hr>
+  {% include "website/includes/home_blog.html" %}
 {% endblock %}

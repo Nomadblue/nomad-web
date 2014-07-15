@@ -175,6 +175,10 @@ TEMPLATE_EXTRA_CONTEXT = {
     'ga_template_path': env_var('GA_TEMPLATE_PATH', "website/includes/ga_nomadblue_com.html"),
 }
 
+PURGE_IMAGES_FROM_MODELS = (
+    ('blog.NomadPost', 'image'),
+)
+
 try:
     from nomadweb.localsettings import *
 except:

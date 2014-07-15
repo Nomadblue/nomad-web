@@ -58,19 +58,12 @@
     {% endif %}
     <script type="text/javascript" charset="utf-8">
       $(function() {
-        $('.carousel').carousel();
-        $('#button').bind('click',function(event){
+        $('#scrollDownButton').bind('click',function(event){
           var $anchor = $(this);
           $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
           }, 1500);
           event.preventDefault();
-        });
-        $('#myCarousel').carousel({
-          interval: 10000
-        })
-        $('#myCarousel').on('slid.bs.carousel', function() {
-          //alert("slid");
         });
       });
     </script>
