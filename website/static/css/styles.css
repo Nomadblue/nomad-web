@@ -6134,21 +6134,26 @@ body {
 }
 .home-lead {
   text-align: center;
-  background-color: #F6F6EF;
+  background: url(../img/santiago_bg.png) no-repeat center center fixed;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-top: 90px;
   padding-bottom: 20px;
+  min-height: 350px;
 }
 .home-lead .lead-div {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 .home-lead .lead-div h1 {
-  font-size: 5.9vw;
+  font-size: 8vw;
   text-decoration: underline;
   color: #eee;
 }
 .home-lead .lead-div h2 {
-  font-size: 3.3vw;
   color: #eee;
 }
 .see-more {
@@ -6170,7 +6175,7 @@ body {
   text-align: center;
   text-indent: -999em;
   display: inline-block;
-  width: 360px;
+  width: 100%;
   height: 150px;
 }
 .home-triptic a#triptic1 {
