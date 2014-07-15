@@ -82,6 +82,10 @@
         {{ object.content|safe }}
       </div>
 
+      <hr>
+      {% include "website/includes/share_buttons.html" with object=object %}
+      <hr>
+
     </div>
     <div class="col-md-3">
       <h3>{% trans "About this blog" %}</h3>
