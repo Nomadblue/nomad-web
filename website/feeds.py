@@ -1,6 +1,7 @@
 from django.contrib.syndication.views import Feed
 from django.db.models import Q
 from django.utils.translation import ugettext_lazy as _
+from django.conf import settings
 
 from nomadblog import get_post_model
 
@@ -24,7 +25,15 @@ class LatestEntries(Feed):
         return item.title
 
     def item_description(self, item):
-        return item.content
+        # Django storage backend for S3 with django-storages requires defining
+        # STATIC_URL with absolute url. For other backends, final img_url may
+        # end up being relative (e.g. if using default django storage backend
+        # in development mode.
+        try:
+            img_url = "%s%s" % (settings.STATIC_URL, item.pic.url)
+        except:
+            img_url = "%simg/nomadblue_logo_fb.png" % settings.STATIC_URL
+        return "<img src='%s'>%s" % (img_url, item.content)
 
 
 class LatestEntriesDjango(Feed):

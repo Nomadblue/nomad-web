@@ -12,6 +12,10 @@ class NomadPost(Post):
     summary = models.TextField()
     image = models.ImageField(upload_to="images/posts/%Y/%m/%d", max_length=500, blank=True)
 
+    # Imagekit specs
+    pic = ImageSpecField([Adjust(contrast=1.2, sharpness=1.1), ResizeToFit(720)], source='image', format='PNG', options={'quality': 90})
+    listed_pic = ImageSpecField([Adjust(contrast=1.2, sharpness=1.1), ResizeToFill(720, 300)], source='image', format='PNG', options={'quality': 90})
+
     def __unicode__(self):
         return self.title
 
@@ -20,12 +24,8 @@ class NomadPost(Post):
         category = self.categories.latest('id')
         return reverse('post_detail', kwargs={'category_slug': category.slug, 'slug': self.slug})
 
-    # Imagekit specs
-    pic = ImageSpecField([Adjust(contrast=1.2, sharpness=1.1), ResizeToFit(720)], source='image', format='PNG', options={'quality': 90})
-    listed_pic = ImageSpecField([Adjust(contrast=1.2, sharpness=1.1), ResizeToFill(720, 300)], source='image', format='PNG', options={'quality': 90})
 
-
-# This code here to be used alogn with the {% generateimage %} imagekit template tag
+# This code here to be used along with the {% generateimage %} imagekit template tag
 # http://django-imagekit.readthedocs.org/en/latest/#generateimage
 # https://github.com/matthewwithanm/django-imagekit/issues/202
 

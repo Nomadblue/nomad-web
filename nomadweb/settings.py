@@ -156,9 +156,10 @@ ENABLE_DEBUG_TOOLBAR = env_var('ENABLE_DEBUG_TOOLBAR', False)
 # If False, it will use S3
 LOCAL_STORAGE = env_var('LOCAL_STORAGE', False)
 
+SITE_URL = env_var('SITE_URL', 'http://localhost:8000')
 TEMPLATE_EXTRA_CONTEXT = {
     # Site url, no trailing slah (me no like contrib.sites, ugh)
-    'site_url': env_var('SITE_URL', 'http://www.nomadblue.com'),
+    'site_url': SITE_URL,
     # Compile LESS using client-side Javascript (only for dev envs!)
     'use_less': env_var('USE_LESS', False),
     # Use holder.js to dinamically render local customizable placeholders
