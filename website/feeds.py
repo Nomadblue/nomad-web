@@ -27,10 +27,10 @@ class LatestEntries(Feed):
     def item_description(self, item):
         # Django storage backend for S3 with django-storages requires defining
         # STATIC_URL with absolute url. For other backends, final img_url may
-        # end up being relative (e.g. if using default django storage backend
-        # in development mode.
+        # end up being relative and incomplete, STATIC_URL prefix need be to
+        # be appended (e.g. django default storage backend in development mode)
         try:
-            img_url = "%s%s" % (settings.STATIC_URL, item.pic.url)
+            img_url = item.pic.url
         except:
             img_url = "%simg/nomadblue_logo_fb.png" % settings.STATIC_URL
         return "<img src='%s'>%s" % (img_url, item.content)
