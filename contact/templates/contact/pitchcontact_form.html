@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block html_title %}{% trans "Pitch your idea" %} | Nomadblue{% endblock %}
+{% block html_desc %}{% trans "Give us some basic details about your startup or project, so we can understant better your needs" %}{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
+<meta property="og:title" content="{% trans "Pitch your idea to Nomadblue - Your CTO on-demand" %}">
+<meta property="og:url" content="{{ site_url }}{% url 'contact_form' %}">
+<meta property="og:description" content="{% trans "Give us some basic details about your startup or project, so we can understant better your needs" %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="title-lead">
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li>{% trans "Pitch your idea" %}</li>
+    </ul>
+    <h1>{% trans "Pitch your idea" %}</h1>
+  </div>
+</div>
+<div class="container">
+  <p class="post-summary">{% trans "Do you want to pitch us your idea? Answer these questions and we will review them. Feel free to provide any information you want, or leave blank some of the questions, if you do not want to unveil certain parts or sensitive data. Also, we guarantee that the information is confidential, we do not steal!" %}</p>
+
+  <form action="{% url 'pitchcontact_form' %}" method="post" id="contact-form" class="form-horizontal" role="form">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">{% trans "Your name" %}</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" name="name" id="name" placeholder="{% trans "Your name here" %}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">{% trans "Email address" %}</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" name="email" id="email" placeholder="{% trans "your@email.com" %}">
+      </div>
+    </div>
+    <hr>
+
+    <h2>{% trans "General information" %}</h2>
+    <p>{% trans "As your CTO on-demand, we must understand very well what are we going to work on; it is our compromise to deliver the best service, and this means becoming an active part of the whole project team." %}</p>
+    <p><strong>{% trans "Questions to answer:" %}</strong></p>
+    <br>
+
+    <p><strong>{% trans "Can you describe, in a few words, what is your business, product or service you want us to develop? What is the problem you are solving?" %}</strong></p>
+    <p><textarea class="form-control" name="overview" id="overview" rows="8"></textarea></p>
+    <br>
+
+    <p><strong>{% trans "Who will you be selling your product/service to? How does your company or project make money?" %}</strong></p>
+    <p><textarea class="form-control" name="business_model" id="business_model" rows="8"></textarea></p>
+    <br>
+
+    <p><strong>{% trans "Do you already have an MVP or product developed we can check out? If not, could you provide us a list of resources for competitors or similar products or services in the same business?" %}</strong></p>
+    <p><textarea class="form-control" name="mvp" id="mvp" rows="8"></textarea></p>
+    <br>
+
+    <p><strong>{% trans "Are you incorporated? If so, what is your company name, contact, website, etc?" %}</strong></p>
+    <p><textarea class="form-control" name="company_details" id="company_details" rows="8"></textarea></p>
+    <hr>
+
+    <h2>{% trans "Project planning" %}</h2>
+    <p>{% trans "Our philosophy is to deliver work on a daily basis. That is why we do not produce estimates or fixed budgets. This does not mean, however, that we do not plan ahead and set milestones; rather the contrary. Also, sometimes our customers need to reach certain deadlines based on agreements with third parties, marketing deals, assisting to important fairs or conferences, etc." %}</p>
+    <p><strong>{% trans "Questions to answer:" %}</strong></p>
+    <br>
+
+    <p><strong>{% trans "Do you already have a project plan or roadmap we can review?" %}</strong></p>
+    <p><textarea class="form-control" name="project_plan" id="project_plan" rows="8"></textarea></p>
+    <br>
+
+    <p><strong>{% trans "Do you need to make the development calendar adjust to fit certain dates or even a launch date?" %}</strong></p>
+    <p><textarea class="form-control" name="dev_calendar" id="dev_calendar" rows="8"></textarea></p>
+    <hr>
+
+    <h2>{% trans "Daily communications" %}</h2>
+    <p>{% trans "Project management between Nomadblue and the customer involves working hand-in-hand using the following:" %}</p>
+    <ul>
+      <li><p>{% trans "Common communication channels (phone, email, VoIP)" %}</p></li>
+      <li><p>{% trans "Scheduled meetings, aimed to do follow-ups on the development and to solve questions that any member can have. The information and feedback is collected and used to keep on working." %}</p></li>
+    </ul>
+    <p><strong>{% trans "Questions to answer:" %}</strong></p>
+    <br>
+
+    <p><strong>{% trans "Do you already have someone appointed as the one who will hold this role/position? If not, will you be able to have someone ready  the day we start working together, if we close an agreement?" %}</strong></p>
+    <p><textarea class="form-control" name="middle_person" id="middle_person" rows="8"></textarea></p>
+    <hr>
+
+    <h2>{% trans "Working time sync" %}</h2>
+    <p>{% trans "As you perhaps already know by now, we are based in Santiago de Chile. Most of our clients, though are scattered around the globe, so it is important that we know how to schedule our calendars and times." %}</p>
+    <p><strong>{% trans "Questions to answer:" %}</strong></p>
+    <br>
+
+    <p><strong>{% trans "What timezone do you usually work on? What will be your daily availability?" %}</strong></p>
+    <p><textarea class="form-control" name="timezone" id="timezone" rows="8"></textarea></p>
+    <br>
+
+    <p><input type="submit" class="btn btn-primary btn-lg" value="{% trans "Send" %}"></p>
+
+  </form>
+
+</div>
+{% endblock content %}

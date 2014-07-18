@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nomadblue\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-15 11:30-0500\n"
-"PO-Revision-Date: 2014-07-15 12:31-0400\n"
+"POT-Creation-Date: 2014-07-18 16:01-0500\n"
+"PO-Revision-Date: 2014-07-18 17:01-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Nomadblue <info@nomadblue.com>\n"
 "Language: es\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: blog/templates/nomadblog/category_list.html:6
 #: blog/templates/nomadblog/category_list.html:24
 #: blog/templates/nomadblog/category_list.html:26
-#: blog/templates/nomadblog/post_detail.html:87
+#: blog/templates/nomadblog/post_detail.html:93
 #: blog/templates/nomadblog/post_list.html:39
 #: blog/templates/nomadblog/post_list_by_category.html:24
 msgid "Categories"
@@ -45,6 +45,9 @@ msgstr ""
 #: blog/templates/nomadblog/post_list.html:23
 #: blog/templates/nomadblog/post_list_by_category.html:22
 #: contact/templates/contact/contact_form.html:22
+#: contact/templates/contact/contact_success.html:22
+#: contact/templates/contact/pitchcontact_form.html:21
+#: contact/templates/contact/pitchcontact_success.html:22
 #: website/templates/jobs.html:22
 msgid "Home"
 msgstr "Inicio"
@@ -53,12 +56,12 @@ msgstr "Inicio"
 msgid "Sorry, no categories found."
 msgstr "Lo sentimos, no se han encontrado categorías"
 
-#: blog/templates/nomadblog/post_detail.html:85
+#: blog/templates/nomadblog/post_detail.html:91
 #: blog/templates/nomadblog/post_list.html:37
 msgid "About this blog"
 msgstr "Acerca de este blog"
 
-#: blog/templates/nomadblog/post_detail.html:86
+#: blog/templates/nomadblog/post_detail.html:92
 #: blog/templates/nomadblog/post_list.html:38
 msgid ""
 "Hello! We are Nomadblue, a group of technology enthusiasts building "
@@ -94,13 +97,14 @@ msgstr ""
 "aplicaciones móviles? Sueñas con lanzar esa idea? Hablemos!"
 
 #: contact/templates/contact/contact_form.html:12
-#: website/templates/base.html:39
+#: website/templates/base.html:40
 msgid "Nomadblue - Your CTO on-demand"
 msgstr "Nomadblue, tu CTO \"on-demand\""
 
 #: contact/templates/contact/contact_form.html:14
 #: contact/templates/contact/contact_success.html:14
-#: website/templates/base.html:9 website/templates/base.html.py:41
+#: contact/templates/contact/pitchcontact_success.html:14
+#: website/templates/base.html:9 website/templates/base.html.py:42
 #: website/templates/jobs.html:14 website/templates/python_jobs.html:14
 msgid ""
 "We invest in talent to create disrupting businesses. We have the tools and "
@@ -119,10 +123,12 @@ msgstr ""
 "escucharte."
 
 #: contact/templates/contact/contact_form.html:33
+#: contact/templates/contact/pitchcontact_form.html:34
 msgid "Your name"
 msgstr "Tu nombre"
 
 #: contact/templates/contact/contact_form.html:35
+#: contact/templates/contact/pitchcontact_form.html:36
 msgid "Your name here"
 msgstr "Tu nombre aquí"
 
@@ -135,10 +141,12 @@ msgid "e.g. +56 9 58349448"
 msgstr "Por ejemplo: +56 9 58349448"
 
 #: contact/templates/contact/contact_form.html:45
+#: contact/templates/contact/pitchcontact_form.html:40
 msgid "Email address"
 msgstr "Dirección de email"
 
 #: contact/templates/contact/contact_form.html:47
+#: contact/templates/contact/pitchcontact_form.html:42
 msgid "your@email.com"
 msgstr "tu@email.com"
 
@@ -147,6 +155,7 @@ msgid "Your message"
 msgstr "Tu mensaje"
 
 #: contact/templates/contact/contact_form.html:58
+#: contact/templates/contact/pitchcontact_form.html:103
 msgid "Send"
 msgstr "Enviar"
 
@@ -167,16 +176,205 @@ msgid "Address: Almirante Zegers 764, Providencia, Santiago (Chile)"
 msgstr "Dirección: Almirante Zegers 764, Providencia, Santiago (Chile)"
 
 #: contact/templates/contact/contact_success.html:6
+#: contact/templates/contact/contact_success.html:24
+#: contact/templates/contact/contact_success.html:26
+#: contact/templates/contact/pitchcontact_success.html:6
+#: contact/templates/contact/pitchcontact_success.html:24
+#: contact/templates/contact/pitchcontact_success.html:26
 msgid "Thank you"
 msgstr "Muchas gracias"
 
 #: contact/templates/contact/contact_success.html:7
+#: contact/templates/contact/pitchcontact_success.html:7
 msgid "Thanks for contacting us!"
 msgstr "Gracias por contactar con nosotros!"
 
 #: contact/templates/contact/contact_success.html:12
+#: contact/templates/contact/pitchcontact_success.html:12
 msgid "Nomadblue - Web development for startups and smart companies"
 msgstr "Nomadblue - Desarrollo web para startups y empresas inteligentes"
+
+#: contact/templates/contact/contact_success.html:23
+#: contact/templates/contact/pitchcontact_form.html:6
+#: contact/templates/contact/pitchcontact_form.html:22
+#: contact/templates/contact/pitchcontact_form.html:24
+#: contact/templates/contact/pitchcontact_success.html:23
+msgid "Pitch your idea"
+msgstr "Cuéntanos tu idea"
+
+#: contact/templates/contact/contact_success.html:31
+#: contact/templates/contact/pitchcontact_success.html:31
+msgid "Thanks for contacting us! We will write you back shortly."
+msgstr ""
+"Gracias por contactar con nosotros! Te escribiremos de vuelta en breve."
+
+#: contact/templates/contact/pitchcontact_form.html:7
+#: contact/templates/contact/pitchcontact_form.html:14
+msgid ""
+"Give us some basic details about your startup or project, so we can "
+"understant better your needs"
+msgstr ""
+"Danos algunos detalles básicos sobre tu startup o proyecto, para que podamos "
+"entender mejor tus necesidades"
+
+#: contact/templates/contact/pitchcontact_form.html:12
+msgid "Pitch your idea to Nomadblue - Your CTO on-demand"
+msgstr "Presenta tu idea a Nomadblue, tu CTO \"on-demand\""
+
+#: contact/templates/contact/pitchcontact_form.html:28
+msgid ""
+"Do you want to pitch us your idea? Answer these questions and we will review "
+"them. Feel free to provide any information you want, or leave blank some of "
+"the questions, if you do not want to unveil certain parts or sensitive data. "
+"Also, we guarantee that the information is confidential, we do not steal!"
+msgstr ""
+"Quieres presentarnos tu idea? Responde estas preguntas y nosotros las "
+"revisaremos. No tengas reparo en proporcionar la información que quieras, o "
+"dejar en blanco algunas de las preguntas, si no quieres descubrir ciertas "
+"partes o datos sensibles de tu proyecto. Te garantizamos, de todas formas, "
+"que la información es confidencial, nosotros no robamos!"
+
+#: contact/templates/contact/pitchcontact_form.html:47
+msgid "General information"
+msgstr "Información general"
+
+#: contact/templates/contact/pitchcontact_form.html:48
+msgid ""
+"As your CTO on-demand, we must understand very well what are we going to "
+"work on; it is our compromise to deliver the best service, and this means "
+"becoming an active part of the whole project team."
+msgstr ""
+"Como tu CTO on-demand, debemos entender muy bien en qué vamos a trabajar; es "
+"nuestro compromiso entregar el mejor servicio, y esto significa convertirse "
+"en parte activa del equipo del proyecto."
+
+#: contact/templates/contact/pitchcontact_form.html:49
+#: contact/templates/contact/pitchcontact_form.html:70
+#: contact/templates/contact/pitchcontact_form.html:87
+#: contact/templates/contact/pitchcontact_form.html:96
+msgid "Questions to answer:"
+msgstr "Preguntas a responder:"
+
+#: contact/templates/contact/pitchcontact_form.html:52
+msgid ""
+"Can you describe, in a few words, what is your business, product or service "
+"you want us to develop? What is the problem you are solving?"
+msgstr ""
+"Puedes describir, en breves palabras, cuál es tu negocio, product o servicio "
+"que quieres desarrollar? Cuál es el problema que estás solucionando?"
+
+#: contact/templates/contact/pitchcontact_form.html:56
+msgid ""
+"Who will you be selling your product/service to? How does your company or "
+"project make money?"
+msgstr ""
+"A quién vas a vender tu producto o servicio? Cómo el proyecto o la empresa "
+"hace dinero?"
+
+#: contact/templates/contact/pitchcontact_form.html:60
+msgid ""
+"Do you already have an MVP or product developed we can check out? If not, "
+"could you provide us a list of resources for competitors or similar products "
+"or services in the same business?"
+msgstr ""
+"Tienes ya un MVP o producto desarrollado que podamos revisar? Si no es así, "
+"podrías proporcionarnos una lista de recursos de competidores o productos o "
+"servicios similares en el mismo negocio o industria?"
+
+#: contact/templates/contact/pitchcontact_form.html:64
+msgid ""
+"Are you incorporated? If so, what is your company name, contact, website, "
+"etc?"
+msgstr ""
+"Estás incorporado o dado de alta como empresa? Si es así, cuál es el nombre "
+"de tu empresa, contacto, website, etc?"
+
+#: contact/templates/contact/pitchcontact_form.html:68
+msgid "Project planning"
+msgstr "Planificación de proyecto"
+
+#: contact/templates/contact/pitchcontact_form.html:69
+msgid ""
+"Our philosophy is to deliver work on a daily basis. That is why we do not "
+"produce estimates or fixed budgets. This does not mean, however, that we do "
+"not plan ahead and set milestones; rather the contrary. Also, sometimes our "
+"customers need to reach certain deadlines based on agreements with third "
+"parties, marketing deals, assisting to important fairs or conferences, etc."
+msgstr ""
+"Nuestra filosofía es entregar nuestro trabajo de manera diaria. Es por eso "
+"que no damos estimaciones o presupuestos cerrados. Esto no significa, de "
+"todas maneras, que no planeamos a futuro o establecemos hitos; más bien al "
+"contrario. Además, algunas veces nuestros clientes necesitan llegar a "
+"ciertos deadlines basados en acuerdos con terceros, tratos de marketing, "
+"asistir a ferias importantes o conferencias, etc."
+
+#: contact/templates/contact/pitchcontact_form.html:73
+msgid "Do you already have a project plan or roadmap we can review?"
+msgstr "Tienes un plan de proyecto o hoja de ruta que podamos revisar?"
+
+#: contact/templates/contact/pitchcontact_form.html:77
+msgid ""
+"Do you need to make the development calendar adjust to fit certain dates or "
+"even a launch date?"
+msgstr ""
+"Necesitas que el calendario de desarrollo se ajuste a ciertas fechas o "
+"incluso a una fecha de lanzamiento?"
+
+#: contact/templates/contact/pitchcontact_form.html:81
+msgid "Daily communications"
+msgstr "Comunicaciones diarias"
+
+#: contact/templates/contact/pitchcontact_form.html:82
+msgid ""
+"Project management between Nomadblue and the customer involves working hand-"
+"in-hand using the following:"
+msgstr ""
+"La gestión de proyecto entre Nomadblue y el cliente significa trabajar mano "
+"a mano usando lo siguiente:"
+
+#: contact/templates/contact/pitchcontact_form.html:84
+msgid "Common communication channels (phone, email, VoIP)"
+msgstr "Canales habituales de comunicación (teléfono, email, VoIP)"
+
+#: contact/templates/contact/pitchcontact_form.html:85
+msgid ""
+"Scheduled meetings, aimed to do follow-ups on the development and to solve "
+"questions that any member can have. The information and feedback is "
+"collected and used to keep on working."
+msgstr ""
+"Reuniones programadas, enfocadas a hacer seguimientos del desarrollo y "
+"resolver preguntas que cada miembro tenga. La información y feedback se "
+"recolecta y se usa para continuar trabajando."
+
+#: contact/templates/contact/pitchcontact_form.html:90
+msgid ""
+"Do you already have someone appointed as the one who will hold this role/"
+"position? If not, will you be able to have someone ready  the day we start "
+"working together, if we close an agreement?"
+msgstr ""
+"Tienes alguien asignado como el que representará esta posición o rol? De no "
+"ser así, tendrás alguien listo el día que empecemos a trabajar juntos, si "
+"llegamos a algún tipo de acuerdo?"
+
+#: contact/templates/contact/pitchcontact_form.html:94
+msgid "Working time sync"
+msgstr "Sincronización de horarios"
+
+#: contact/templates/contact/pitchcontact_form.html:95
+msgid ""
+"As you perhaps already know by now, we are based in Santiago de Chile. Most "
+"of our clients, though are scattered around the globe, so it is important "
+"that we know how to schedule our calendars and times."
+msgstr ""
+"Como probablemente ya sabrás a estas alturas, nuestro centro de operaciones "
+"está en Santiago de Chile. Pero la mayoría de nuestros clientes están "
+"repartidos por el globo, así que es importante saber cómo programar nuestros "
+"calendarios y horarios"
+
+#: contact/templates/contact/pitchcontact_form.html:99
+msgid ""
+"What timezone do you usually work on? What will be your daily availability?"
+msgstr "En qué zona horaria sueles trabajar? Cuál será tu disponibilidad?"
 
 #: nomadblog/models.py:10
 msgid "iso country code"
@@ -291,19 +489,19 @@ msgstr "contenido"
 msgid "featured countries"
 msgstr "países destacados"
 
-#: website/feeds.py:16 website/feeds.py:31 website/feeds.py:46
+#: website/feeds.py:17 website/feeds.py:40 website/feeds.py:55
 msgid "Nomadblue - We are your CTO on-demand"
 msgstr "Nomadblue - Somos tu CTO \"on-demand\""
 
-#: website/feeds.py:18
+#: website/feeds.py:19
 msgid "Nomadblue: Latest entries"
 msgstr "Nomadblue: Ultimas entradas"
 
-#: website/feeds.py:33
+#: website/feeds.py:42
 msgid "Nomadblue: Latest entries in Django category"
 msgstr "Nomadblue: Últimas entradas en la categoría Django"
 
-#: website/feeds.py:48
+#: website/feeds.py:57
 msgid "Nomadblue: Latest entries in Python category"
 msgstr "Nomadblue: Últimas entradas en la categoría Python"
 
@@ -367,22 +565,22 @@ msgid ""
 "We invest in talent to create disrupting businesses.<br>We have the tools "
 "and the expertise for your ideas."
 msgstr ""
-"Invertimos en atento para crear negocios disruptivos.<br>Tenemos las "
+"Invertimos en talento para crear negocios disyuntivos.<br>Tenemos las "
 "herramientas y el expertise para tus ideas."
 
-#: website/templates/website/includes/header.html:29
+#: website/templates/website/includes/header.html:25
 msgid "HOME"
 msgstr "INICIO"
 
-#: website/templates/website/includes/header.html:30
+#: website/templates/website/includes/header.html:26
 msgid "BLOG"
 msgstr "BLOG"
 
-#: website/templates/website/includes/header.html:31
+#: website/templates/website/includes/header.html:27
 msgid "CONTACT"
 msgstr "CONTACTO"
 
-#: website/templates/website/includes/header.html:32
+#: website/templates/website/includes/header.html:28
 msgid "JOBS"
 msgstr "EMPLEOS"
 
@@ -401,22 +599,6 @@ msgid ""
 msgstr ""
 "Aceleradora de startups. Ayudamos a lanzar empresas innovadoras "
 "introduciendo nuestro expertise en el corazón mismo de sus negocios"
-
-#: website/templates/website/includes/home_lead.html:9
-msgid "Scroll down"
-msgstr "Scroll abajo"
-
-#: website/templates/website/includes/home_quote.html:6
-msgid ""
-"We are a group of technology enthusiasts building applications and first-"
-"class web tools. Experienced in entrepreneurship and lean methodologies, we "
-"have already helped a lot of startups and companies to transform their "
-"projects into something real."
-msgstr ""
-"Somos un grupo de entusiastas de la tecnología que construimos aplicaciones "
-"y herramientas web de primera clase. Experimentados en emprendimiento y "
-"metodologías lean, ya hemos ayudado a muchas startups y empresas a hacer "
-"realidad sus proyectos."
 
 #: website/templates/website/includes/home_showcase.html:6
 msgid "Startups & Projects"
@@ -485,6 +667,20 @@ msgstr ""
 "<b>cadenas</b> para tus ideas</b>! Déjanos guiarte a ti y a tu equipo a "
 "través de los diferentes estadios, de manera ágil y aplicando una rutina "
 "inversiva para mantenerte consciente y colaborativo."
+
+#~ msgid "Scroll down"
+#~ msgstr "Scroll abajo"
+
+#~ msgid ""
+#~ "We are a group of technology enthusiasts building applications and first-"
+#~ "class web tools. Experienced in entrepreneurship and lean methodologies, "
+#~ "we have already helped a lot of startups and companies to transform their "
+#~ "projects into something real."
+#~ msgstr ""
+#~ "Somos un grupo de entusiastas de la tecnología que construimos "
+#~ "aplicaciones y herramientas web de primera clase. Experimentados en "
+#~ "emprendimiento y metodologías lean, ya hemos ayudado a muchas startups y "
+#~ "empresas a hacer realidad sus proyectos."
 
 #~ msgid "Latest blog posts"
 #~ msgstr "Últimos artículos de blog"
