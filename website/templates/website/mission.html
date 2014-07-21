@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load i18n %}
+
+{% block html_title %}{% trans "Our mission" %} | Nomadblue{% endblock %}
+{% block html_desc %}{% trans "A summary about us and how we bring a new concept to startups and entrepreneurship." %}{% endblock %}
+
+{% block open_graph %}
+<meta property="og:type" content="website">
+<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
+<meta property="og:title" content="{% trans "Nomadblue - Web development for startups and smart companies" %}">
+<meta property="og:url" content="{{ site_url }}{% url 'mission' %}">
+<meta property="og:description" content="{% trans "A summary about us and how we bring a new concept to startups and entrepreneurship." %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="title-lead">
+    <ul class="list-unstyled list-inline">
+      <li><a href="{% url 'home' %}">{% trans "Home" %}</a></li>
+      <li>{% trans "Our Mission" %}</li>
+    </ul>
+    <h1>{% trans "Our Mission" %}</h1>
+  </div>
+</div>
+
+<div class="container">
+<h2>About us</h2>
+
+<p>Our mission is to <strong>boost startups reach launching their ideas faster and better, taking control of the IT decisions and execution, and so helping them avoid failure because of bad management in the development of their products and services</strong>.</p>
+
+<p>We summarise it all in our company slogan "<em>your CTO on-demand</em>", in which we state that we are much more than just a traditional development company. We are a <strong>technology accelerator</strong> that incorporate the founders on a complete immersion in the methodologies (e.g. <strong>lean startup</strong> or <strong>agile development</strong>) and technologies used in our development processes. We become the CTO for them.</p>
+
+<p>When partnering with us, founders free themselves of everything related to software development and, at the same time, secure the proper execution of the startup ideas and projects from a technical point of view. They can instead focus on things like <strong>customer development, marketing, fundraising or sales</strong>.</p>
+
+<p>Our promise is defined through <strong>continuous delivery</strong>: day by day we deliver our work so that every other important aspect for a startup (e.g. pivoting business models, reaching key providers or working on new funding rounds) receives all the dedication needed and integrates with the product development seamlessly.</p>
+
+<p>In order to stick to our value proposition, it is crucial for our startups to understand that <strong>the level of commitment and participation we demand is very high</strong>. We must work together, not isolated. We do not understand the relationship as a customer-provider, but rather a full-round partnership.</p>
+
+<h2>How we do it</h2>
+
+<p>We walk with entrepreneurs on their early steps and stages, as technology mentors or advisors, until they become funded and deposit their trust on us in developing their projects; through this process, we get the chance to know better the needs and understand the whole thing even before we put ourselves "hands on".</p>
+
+<p>Our company works for a <strong>monthly fee</strong>; we don't believe in fixed estimates and requirements, because they are like handcuffs to the ideas of our entrepreneurs. Only in special cases we consider closed budgets under pre-approved fixed list of tasks. Also, in some cases, we may consider a <strong>small amount of equity</strong>, in exchange for lower fees.</p>
+
+<p>There are <strong>two main stages</strong> a project may be, in terms of amount of development needed. The first requires workforce and full-time dedication from part of our team, and is usually happening while we are developing MVPs or major next releases; we call it "<em>development stage</em>". The other one slows down the pace of product evolution and software delivery, focusing us more on things like resolving bugs, improvement of existing features or test coverage; we call it "<em>maintenance stage</em>".</p>
+
+<p>We organize our team in a "<em>bootstraped</em>" way, supported by <strong>talent</strong> rather than number of people working. Although each one of us have particular skills and know-how, we are ready to eventually take other roles to overcome special conditions or deadlines.</p>
+
+<h2>What makes us unique</h2>
+
+<p>We create robust developments with best practices implemented from the beginning. As experts in <strong>Python and Javascript</strong>, we have created, through years of experience, a <strong>solid codebase that we use as a launch platform</strong> to implement common features and patterns found in most frontend and backend applications.</p>
+
+<p>Startups follow and monitor the progress of their projects through different online <strong>collaboration tools</strong> (tickets, issues, code repositories, task management) and also participate improving documentation or maintaining the quality assurance tests.</p>
+
+<p>We are a <strong>design-led</strong> company, because believe in the union between design and technology. Thus, our workflow is guided by the user interface (UI), seeking the constant improvement of the user experience (UX). Our goal is build  digital products with the optimal practical use (<strong>interaction design</strong>).</p>
+
+<h2>Business strategy</h2>
+
+<p>Our target partners are <strong>entrepreneurs and startups</strong>, incorporated or not, with seed capital or a first angel or venture capital. These startups can be <strong>based anywhere in the world</strong>. However, knowing that startups tend to concentrate in certain areas or cities, we pay special attention to those hubs.</p>
+
+<p>We seek other fellow entrepreneurs, mentors, advisors, investors and people involved at any level in the entrepreneurship business, to become <strong>ambassadors</strong> and spread the message and value proposition from our company. They, as a result, may benefit from this relationship, depending on each case and agreement reached with them.</p>
+
+<p>In order to extend our area of business activities, we work to <strong>create partnerships and collaborate with</strong> capital firms, organizations and public/private institutions fostering entrepreneurship. We also aim to <strong>participate</strong> in demo days, hackatons, contests and programs where there can be any chance of meeting and contacting startups, so that we can do a follow up of their evolution and status.</p>
+
+<p>From meetups or talks, as active members of the local community of developers, until we host bigger things (e.g. Latinamerica's first DjangoCon), we seek to perform activities that build ourselves a <strong>company reputation</strong> to captivate the interest of talented employees.</p>
+</div>
+
+{% endblock content %}
+
