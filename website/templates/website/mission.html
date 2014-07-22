@@ -8,7 +8,7 @@
 
 {% block open_graph %}
 <meta property="og:type" content="website">
-<meta property="og:image" content="{% static 'img/nomadblue_logo_fb.png' %}">
+<meta property="og:image" content="{% static 'img/mission_moon.jpg' %}">
 <meta property="og:title" content="{% trans "Nomadblue - Web development for startups and smart companies" %}">
 <meta property="og:url" content="{{ site_url }}{% url 'mission' %}">
 <meta property="og:description" content="{% trans "A summary about us and how we bring a new concept to startups and entrepreneurship." %}">
@@ -27,9 +27,27 @@
 </div>
 
 <div class="container">
-<h2>About us</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="post-summary">
+<p>Our mission is to <strong>boost startups</strong> reach launching their ideas <strong>faster and better,</strong> taking control of the IT decisions and execution, and so helping them <strong>avoid failure</strong> because of bad management in the <strong>development of their products and services</strong>.</p>
 
-<p>Our mission is to <strong>boost startups reach launching their ideas faster and better, taking control of the IT decisions and execution, and so helping them avoid failure because of bad management in the development of their products and services</strong>.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="post-pic" style="margin-top: 10px">
+        {% if use_holder_js %}
+          <img src="holder.js/100%x200/sky" style="max-width: 100%; height: auto;">
+        {% else %}
+          <img src="{% static 'img/mission_moon.jpg' %}" style="max-width: 100%; height: auto;">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<h2>About us</h2>
 
 <p>We summarise it all in our company slogan "<em>your CTO on-demand</em>", in which we state that we are much more than just a traditional development company. We are a <strong>technology accelerator</strong> that incorporate the founders on a complete immersion in the methodologies (e.g. <strong>lean startup</strong> or <strong>agile development</strong>) and technologies used in our development processes. We become the CTO for them.</p>
 
