@@ -17,6 +17,7 @@ urlpatterns = patterns(
     url(r'^subscribe/$', SubscriberCreateView.as_view(), name='subscribe'),
     url(r'^contact/', include('contact.urls')),
     url(r'^mission/$', TemplateView.as_view(template_name="website/mission.html"), name='mission'),
+    url(r'^captcha/', include('captcha.urls')),
     url(r'^blog/', include('nomadblog.urls')),
     url(r'^feeds/latest/$', LatestEntries(), name='latest_entries'),
     url(r'^feeds/django/$', LatestEntriesDjango(), name='latest_entries_django'),

@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'gunicorn',
     'south',
     'propaganda',
+    'captcha',
     'website',
     'contact',
     'blog',

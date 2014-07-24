@@ -3,7 +3,9 @@ from django.views.generic import CreateView
 from django.core.urlresolvers import reverse_lazy
 
 from propaganda.models import Subscriber
+
 from contact.models import Contact, PitchContact
+from contact.forms import ContactForm
 
 
 class NomadPageView(TemplateView):
@@ -18,6 +20,7 @@ class NomadPageView(TemplateView):
 
 class ContactCreateView(CreateView):
     model = Contact
+    form_class = ContactForm
     success_url = reverse_lazy('contact_success')
 
 

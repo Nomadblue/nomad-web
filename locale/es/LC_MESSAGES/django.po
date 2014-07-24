@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nomadblue\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-21 16:56-0500\n"
-"PO-Revision-Date: 2014-07-21 17:58-0400\n"
+"POT-Creation-Date: 2014-07-24 14:25-0500\n"
+"PO-Revision-Date: 2014-07-24 15:25-0400\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Nomadblue <info@nomadblue.com>\n"
 "Language: es\n"
@@ -132,46 +132,53 @@ msgstr "Tu nombre"
 msgid "Your name here"
 msgstr "Tu nombre aquí"
 
-#: contact/templates/contact/contact_form.html:39
+#: contact/templates/contact/contact_form.html:42
 msgid "Phone (optional)"
 msgstr "Teléfono (opcional)"
 
-#: contact/templates/contact/contact_form.html:41
+#: contact/templates/contact/contact_form.html:44
 msgid "e.g. +56 9 58349448"
 msgstr "Por ejemplo: +56 9 58349448"
 
-#: contact/templates/contact/contact_form.html:45
-#: contact/templates/contact/pitchcontact_form.html:40
+#: contact/templates/contact/contact_form.html:51
+#: contact/templates/contact/pitchcontact_form.html:43
 msgid "Email address"
 msgstr "Dirección de email"
 
-#: contact/templates/contact/contact_form.html:47
-#: contact/templates/contact/pitchcontact_form.html:42
+#: contact/templates/contact/contact_form.html:53
+#: contact/templates/contact/pitchcontact_form.html:45
 msgid "your@email.com"
 msgstr "tu@email.com"
 
-#: contact/templates/contact/contact_form.html:51
+#: contact/templates/contact/contact_form.html:60
+#: contact/templates/contact/contact_form.html:88
 msgid "Your message"
 msgstr "Tu mensaje"
 
-#: contact/templates/contact/contact_form.html:58
-#: contact/templates/contact/pitchcontact_form.html:103
+#: contact/templates/contact/contact_form.html:69
+#: contact/templates/contact/contact_form.html:94
+msgid "Are you human?"
+msgstr "Eres humano?"
+
+#: contact/templates/contact/contact_form.html:79
+#: contact/templates/contact/contact_form.html:104
+#: contact/templates/contact/pitchcontact_form.html:109
 msgid "Send"
 msgstr "Enviar"
 
-#: contact/templates/contact/contact_form.html:65
+#: contact/templates/contact/contact_form.html:111
 msgid "Our offices in Santiago, Chile"
 msgstr "Nuestras oficinas en Santiago de Chile"
 
-#: contact/templates/contact/contact_form.html:68
+#: contact/templates/contact/contact_form.html:114
 msgid "Email: info (at) nomadblue.com"
 msgstr "Email: info (at) nomadblue.com"
 
-#: contact/templates/contact/contact_form.html:69
+#: contact/templates/contact/contact_form.html:115
 msgid "Phone: +56 9 58791449"
 msgstr "Teléfono: +56 9 58791449"
 
-#: contact/templates/contact/contact_form.html:70
+#: contact/templates/contact/contact_form.html:116
 msgid "Address: Almirante Zegers 764, Providencia, Santiago (Chile)"
 msgstr "Dirección: Almirante Zegers 764, Providencia, Santiago (Chile)"
 
@@ -236,11 +243,11 @@ msgstr ""
 "partes o datos sensibles de tu proyecto. Te garantizamos, de todas formas, "
 "que la información es confidencial, nosotros no robamos!"
 
-#: contact/templates/contact/pitchcontact_form.html:47
+#: contact/templates/contact/pitchcontact_form.html:53
 msgid "General information"
 msgstr "Información general"
 
-#: contact/templates/contact/pitchcontact_form.html:48
+#: contact/templates/contact/pitchcontact_form.html:54
 msgid ""
 "As your CTO on-demand, we must understand very well what are we going to "
 "work on; it is our compromise to deliver the best service, and this means "
@@ -250,14 +257,14 @@ msgstr ""
 "nuestro compromiso entregar el mejor servicio, y esto significa convertirse "
 "en parte activa del equipo del proyecto."
 
-#: contact/templates/contact/pitchcontact_form.html:49
-#: contact/templates/contact/pitchcontact_form.html:70
-#: contact/templates/contact/pitchcontact_form.html:87
-#: contact/templates/contact/pitchcontact_form.html:96
+#: contact/templates/contact/pitchcontact_form.html:55
+#: contact/templates/contact/pitchcontact_form.html:76
+#: contact/templates/contact/pitchcontact_form.html:93
+#: contact/templates/contact/pitchcontact_form.html:102
 msgid "Questions to answer:"
 msgstr "Preguntas a responder:"
 
-#: contact/templates/contact/pitchcontact_form.html:52
+#: contact/templates/contact/pitchcontact_form.html:58
 msgid ""
 "Can you describe, in a few words, what is your business, product or service "
 "you want us to develop? What is the problem you are solving?"
@@ -265,7 +272,7 @@ msgstr ""
 "Puedes describir, en breves palabras, cuál es tu negocio, product o servicio "
 "que quieres desarrollar? Cuál es el problema que estás solucionando?"
 
-#: contact/templates/contact/pitchcontact_form.html:56
+#: contact/templates/contact/pitchcontact_form.html:62
 msgid ""
 "Who will you be selling your product/service to? How does your company or "
 "project make money?"
@@ -273,7 +280,7 @@ msgstr ""
 "A quién vas a vender tu producto o servicio? Cómo el proyecto o la empresa "
 "hace dinero?"
 
-#: contact/templates/contact/pitchcontact_form.html:60
+#: contact/templates/contact/pitchcontact_form.html:66
 msgid ""
 "Do you already have an MVP or product developed we can check out? If not, "
 "could you provide us a list of resources for competitors or similar products "
@@ -283,7 +290,7 @@ msgstr ""
 "podrías proporcionarnos una lista de recursos de competidores o productos o "
 "servicios similares en el mismo negocio o industria?"
 
-#: contact/templates/contact/pitchcontact_form.html:64
+#: contact/templates/contact/pitchcontact_form.html:70
 msgid ""
 "Are you incorporated? If so, what is your company name, contact, website, "
 "etc?"
@@ -291,11 +298,11 @@ msgstr ""
 "Estás incorporado o dado de alta como empresa? Si es así, cuál es el nombre "
 "de tu empresa, contacto, website, etc?"
 
-#: contact/templates/contact/pitchcontact_form.html:68
+#: contact/templates/contact/pitchcontact_form.html:74
 msgid "Project planning"
 msgstr "Planificación de proyecto"
 
-#: contact/templates/contact/pitchcontact_form.html:69
+#: contact/templates/contact/pitchcontact_form.html:75
 msgid ""
 "Our philosophy is to deliver work on a daily basis. That is why we do not "
 "produce estimates or fixed budgets. This does not mean, however, that we do "
@@ -310,11 +317,11 @@ msgstr ""
 "ciertos deadlines basados en acuerdos con terceros, tratos de marketing, "
 "asistir a ferias importantes o conferencias, etc."
 
-#: contact/templates/contact/pitchcontact_form.html:73
+#: contact/templates/contact/pitchcontact_form.html:79
 msgid "Do you already have a project plan or roadmap we can review?"
 msgstr "Tienes un plan de proyecto o hoja de ruta que podamos revisar?"
 
-#: contact/templates/contact/pitchcontact_form.html:77
+#: contact/templates/contact/pitchcontact_form.html:83
 msgid ""
 "Do you need to make the development calendar adjust to fit certain dates or "
 "even a launch date?"
@@ -322,11 +329,11 @@ msgstr ""
 "Necesitas que el calendario de desarrollo se ajuste a ciertas fechas o "
 "incluso a una fecha de lanzamiento?"
 
-#: contact/templates/contact/pitchcontact_form.html:81
+#: contact/templates/contact/pitchcontact_form.html:87
 msgid "Daily communications"
 msgstr "Comunicaciones diarias"
 
-#: contact/templates/contact/pitchcontact_form.html:82
+#: contact/templates/contact/pitchcontact_form.html:88
 msgid ""
 "Project management between Nomadblue and the customer involves working hand-"
 "in-hand using the following:"
@@ -334,11 +341,11 @@ msgstr ""
 "La gestión de proyecto entre Nomadblue y el cliente significa trabajar mano "
 "a mano usando lo siguiente:"
 
-#: contact/templates/contact/pitchcontact_form.html:84
+#: contact/templates/contact/pitchcontact_form.html:90
 msgid "Common communication channels (phone, email, VoIP)"
 msgstr "Canales habituales de comunicación (teléfono, email, VoIP)"
 
-#: contact/templates/contact/pitchcontact_form.html:85
+#: contact/templates/contact/pitchcontact_form.html:91
 msgid ""
 "Scheduled meetings, aimed to do follow-ups on the development and to solve "
 "questions that any member can have. The information and feedback is "
@@ -348,7 +355,7 @@ msgstr ""
 "resolver preguntas que cada miembro tenga. La información y feedback se "
 "recolecta y se usa para continuar trabajando."
 
-#: contact/templates/contact/pitchcontact_form.html:90
+#: contact/templates/contact/pitchcontact_form.html:96
 msgid ""
 "Do you already have someone appointed as the one who will hold this role/"
 "position? If not, will you be able to have someone ready  the day we start "
@@ -358,11 +365,11 @@ msgstr ""
 "ser así, tendrás alguien listo el día que empecemos a trabajar juntos, si "
 "llegamos a algún tipo de acuerdo?"
 
-#: contact/templates/contact/pitchcontact_form.html:94
+#: contact/templates/contact/pitchcontact_form.html:100
 msgid "Working time sync"
 msgstr "Sincronización de horarios"
 
-#: contact/templates/contact/pitchcontact_form.html:95
+#: contact/templates/contact/pitchcontact_form.html:101
 msgid ""
 "As you perhaps already know by now, we are based in Santiago de Chile. Most "
 "of our clients, though are scattered around the globe, so it is important "
@@ -373,7 +380,7 @@ msgstr ""
 "repartidos por el globo, así que es importante saber cómo programar nuestros "
 "calendarios y horarios"
 
-#: contact/templates/contact/pitchcontact_form.html:99
+#: contact/templates/contact/pitchcontact_form.html:105
 msgid ""
 "What timezone do you usually work on? What will be your daily availability?"
 msgstr "En qué zona horaria sueles trabajar? Cuál será tu disponibilidad?"
@@ -612,7 +619,7 @@ msgstr "EMPLEOS"
 msgid "Articles & News"
 msgstr "Artículos y noticias"
 
-#: website/templates/website/includes/home_blog.html:18
+#: website/templates/website/includes/home_blog.html:20
 msgid "Read our blog here"
 msgstr "Lee nuestro blog aquí"
 
